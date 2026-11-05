@@ -1,7 +1,6 @@
 # Colonization history
 
-<!-- Replace with the Zenodo concept-DOI badge after the first release is archived:
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX) -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23990601.svg)](https://doi.org/10.5281/zenodo.23990601)
 
 Code, simulation outputs and derived observables for attributing bacterial surface
 colonization history to cells or surfaces. One stochastic attachment–division–detachment
@@ -85,7 +84,7 @@ recovery study and the empirical fits from the shipped observables in one sessio
 
 ## Citation and licence
 
-Cite the archived release through its Zenodo DOI; `CITATION.cff` gives the metadata.
+Cite the archived release, doi:10.5281/zenodo.23990601; `CITATION.cff` gives the metadata.
 Code is MIT-licensed (`LICENSE`). Results and derived observables are CC BY 4.0
 (`LICENSE-DATA.md`); the observables derive from Lee *et al.*, figshare
 doi:10.6084/m9.figshare.5969335 and PNAS 115:4471 (2018), doi:10.1073/pnas.1720071115,
