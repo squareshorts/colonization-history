@@ -1,0 +1,133 @@
+9aef2c9012f0e62c2a0721f52512175e8f874871f4c48e6389c38a1a2b011f8f  ./.gitignore
+e3c94fc5ab47032c9f3344d8c87ceaa7320ada48105d5e606eaa4d4dc0ef9e34  ./.zenodo.json
+a11dec75be49f3231945f81c67d6d4f5498e0ed38646981e61733c555a941999  ./CITATION.cff
+1b495c981df1a0d5f3cbbb543c13ddafbf802eea04b476bed52ef938681078c4  ./Colonization_History.ipynb
+159a596f3e237f4cfea204ba43147c2e9f8e0b16ad6b27abad2c5d10975f4f9c  ./LICENSE
+07003fe7eaba966fc17cc6afafe561ff9bda49502721bd13feeaf9229d42727c  ./LICENSE-DATA.md
+b334fb9033ec2737bbb6feb73f227751d95c867205d0e758708cd77bfe057513  ./README.md
+e9d03c1f6f23cd6de19645c98d33addd2c0248c1d94d013e4d53d0f597af0586  ./__pycache__/model.cpython-313.pyc
+bffd3de5ed23533e46fe61c37f91078322016f0d76faa19ede4785d55196bd33  ./__pycache__/test_model.cpython-313.pyc
+0bfa385adf942db6ce8d195002470ee174d1d4b3aa1fa9e77a52ff487be2a79f  ./calibrate.py
+f4b33626678d82479e8599446d5241c167a3d526dbdc0620ce837e8c9a69a33b  ./empirical/ANALYSIS_PLAN_v2.md
+31386a04209bcaa3e5476b9fb207628a60cee37d930d51413f4c0ed70b98e04f  ./empirical/analyze.py
+1ab88d046f0ac509da316bd12a6968605d8e20695aeffafa2cc56cd08c5fa288  ./empirical/analyze_v2.py
+45137466181004c74406b21ffd80a453eb74158ce8f378eb34fbe6b79ecfba12  ./empirical/design_power.py
+382602a179159ac514727a35e17f2788b44eb565c5bcb355c908f9db25a3a601  ./empirical/extract.py
+04db0fc991fb46e81c5399612c1d37e016abbe4785411795c4d30e06eb9ff954  ./empirical/extract_v2.py
+79a971a066d820e03e6569d6c23d6a0b3999e4010169a93175e5ee0cd63ab829  ./empirical/observables/WT YFP-CFP (T1=32.5h,T2=14.75h;FC1)/counts.csv
+825baa90e03fd485fa897445bd37ea5d1bc489926f27eb67d7b6b83fd58d975c  ./empirical/observables/WT YFP-CFP (T1=32.5h,T2=14.75h;FC1)/meta.json
+c65681f0b5b900442dcd0a18eca57ac7fe6929393ce0b720eac32619d62d3d3a  ./empirical/observables/WT YFP-CFP (T1=32.5h,T2=14.75h;FC1)/meta_full.json
+3c5bff0c3362b369876144b67d69f60a0830611028cf919b304256241527c404  ./empirical/observables/WT YFP-CFP (T1=32.5h,T2=14.75h;FC1)/tracks.csv
+835c734c1b2eedd6f9e4c6d186a02cb3afba6ebd4e6b857c3d84769c0a10cef0  ./empirical/observables/WT YFP-CFP (T1=32.5h,T2=14.75h;FC1)/tracks_full.csv
+70ce1fe7e7804105edf7d5111d69853f91df5cc4026cb98f2efc504b01b99dba  ./empirical/observables/WT YFP-CFP (T1=32.5h,T2=14.75h;FC2)/counts.csv
+77c4833e400be90a62cc4d5a633325562161f8a5652bd1a26c5285abf3915a32  ./empirical/observables/WT YFP-CFP (T1=32.5h,T2=14.75h;FC2)/meta.json
+6eaaed1726c5c0439bd4e1e980be844f87adcbc7676e06b4726779d612073355  ./empirical/observables/WT YFP-CFP (T1=32.5h,T2=14.75h;FC2)/meta_full.json
+8a969f2fbc89c27bc004adc8eb5bd6e0be6215f0e8bf41c3673c7d55e13f9353  ./empirical/observables/WT YFP-CFP (T1=32.5h,T2=14.75h;FC2)/tracks.csv
+ca54d75909d77a591c22383f021cbebc47be632234f5f4136804377077430736  ./empirical/observables/WT YFP-CFP (T1=32.5h,T2=14.75h;FC2)/tracks_full.csv
+1af74b8ee77cc8013da0594c427cbd264f0d1fe8cab5a725673f63637ce66c56  ./empirical/observables/WT YFP-CFP (T1=32.5h,T2=14.75h;FC3)/counts.csv
+f68f26a3339d9630967bbf8bcad58b841a94dc8fee93030a3ecab924135df65c  ./empirical/observables/WT YFP-CFP (T1=32.5h,T2=14.75h;FC3)/meta.json
+a32ba3d19da310829da0571178e65a068dd42baf36508d41d279aba38b71bf52  ./empirical/observables/WT YFP-CFP (T1=32.5h,T2=14.75h;FC3)/meta_full.json
+0e5d3c447b950916a7bd059501ab495c2416ceeeeec7d02c48cee44f088a7406  ./empirical/observables/WT YFP-CFP (T1=32.5h,T2=14.75h;FC3)/tracks.csv
+8d520d5cdc237b40a4fdbecefb6bfc942de7336ba2239a48357baf11deeda179  ./empirical/observables/WT YFP-CFP (T1=32.5h,T2=14.75h;FC3)/tracks_full.csv
+b4d7a04b5a64c901c6ce94a6b722f4c2c16b41c86c1501f6014bdeaf495e98e5  ./empirical/observables/WT YFP-CFP (T=26.75h;FC1)/counts.csv
+187554842820a458963a5442ec471e3d501d24453613e2cf30676b6cb01406d2  ./empirical/observables/WT YFP-CFP (T=26.75h;FC1)/meta.json
+1b3441638d97d05cfe125f3127b818e2236677d8156ffae17f88fb6a07c28512  ./empirical/observables/WT YFP-CFP (T=26.75h;FC1)/meta_full.json
+837bd1410b8fb3ba02f09fa46bba94f39e3d6186594cf6be2055a71d650d58e6  ./empirical/observables/WT YFP-CFP (T=26.75h;FC1)/tracks.csv
+677780649841a2c116ea9da1812200296fe062f2c354e6c44b510d2059b43ae1  ./empirical/observables/WT YFP-CFP (T=26.75h;FC1)/tracks_full.csv
+85c761f09d2ecfc980e1633195b56ff613164a24ddd26a9a784e5da68fcbce80  ./empirical/observables/WT YFP-CFP (T=26.75h;FC2)/counts.csv
+233352a5264e6d7c0d256fbd45c1b5863891885aa1e0e47deafb24d85d6ed038  ./empirical/observables/WT YFP-CFP (T=26.75h;FC2)/meta.json
+486d70e1759611950674fd64204b1ff0f834f2230243340c0fbc44b27837f546  ./empirical/observables/WT YFP-CFP (T=26.75h;FC2)/meta_full.json
+298cc516b6c48d8f4151afb6965d0a0b894670fc54389aab2a8ee5b27f0e0c9a  ./empirical/observables/WT YFP-CFP (T=26.75h;FC2)/tracks.csv
+369a9a5afaf30a3fa38530dd8f1b151f911fffe49d33e10cf23a8f2f08337385  ./empirical/observables/WT YFP-CFP (T=26.75h;FC2)/tracks_full.csv
+b741a8c3646b367ad3c950fd2815b8021a477704294b4111efc905be959774ba  ./empirical/observables/WT YFP-CFP (T=29.5h;FC1)/counts.csv
+f48a35aeb18b907cd37725e6f674b990e41fb32a47cae451448902125f9507ae  ./empirical/observables/WT YFP-CFP (T=29.5h;FC1)/meta.json
+b3882f4a4ffcf8ebc3bc44983ace9e81339956f857b6598b876c2b57373beb67  ./empirical/observables/WT YFP-CFP (T=29.5h;FC1)/meta_full.json
+750ae92d126f1da2bdbbc44905a407c5dfb1d788b1250c7d7d909580190988f3  ./empirical/observables/WT YFP-CFP (T=29.5h;FC1)/tracks.csv
+f4e3ac723cbbb66ffe78a556098c0857c56b686a04d58bb9c04c94be0bb426f9  ./empirical/observables/WT YFP-CFP (T=29.5h;FC1)/tracks_full.csv
+86e472d49d82b55c5e97052566ef30e0a064f54f8f828d07145633b95ede807f  ./empirical/observables/WT YFP-CFP (T=29.5h;FC2)/counts.csv
+ded0da29d32e30c56cd9720bf4c09c81b4e1489333d7fe8353c8f167d195b6ab  ./empirical/observables/WT YFP-CFP (T=29.5h;FC2)/meta.json
+abc470809b3fca40081b419b89a463af61daa12207119fd8f4fd6c9f60cfef82  ./empirical/observables/WT YFP-CFP (T=29.5h;FC2)/meta_full.json
+e8acc755e84808b7e8bb735312e65779873bd60d337a5d2d76cca1986d8334c6  ./empirical/observables/WT YFP-CFP (T=29.5h;FC2)/tracks.csv
+eacb0b1b6250b52cdebcfd996b962080eae795abc2beeabace14ab82fa903aea  ./empirical/observables/WT YFP-CFP (T=29.5h;FC2)/tracks_full.csv
+45b9fa81c8d5946b8f5f222e05622847c81be25ab27ad41a7231491f52271203  ./empirical/observables/WT YFP-CFP (Tr=14h)/counts.csv
+2befe12aabaa98f6d5a4f61cf3a5013cbb7b2aeb7645c4decb15a558843f1d2b  ./empirical/observables/WT YFP-CFP (Tr=14h)/meta.json
+0be2ef48f17cb944e714f001b8e45ddaaf2fef73c30e758ad1bdd312aa35506a  ./empirical/observables/WT YFP-CFP (Tr=14h)/meta_full.json
+8f2e52717bb74e52d45a662523188a3e28af0c248c75a81a38e65f4b6b1be471  ./empirical/observables/WT YFP-CFP (Tr=14h)/tracks.csv
+f974c97b3a1c01a354fb940de3f5863436d017d50b4985831d5f3d810db2b4f7  ./empirical/observables/WT YFP-CFP (Tr=14h)/tracks_full.csv
+efa8f20b643424a1536ad569b5fb3041a107ad748f2255335471df86c2c81b5c  ./empirical/observables/WT YFP-CFP (Tr=37h)/counts.csv
+c8f3ad91082a7b47a84d48c2118db198d585d905c3314e7cb59803482fb14f4a  ./empirical/observables/WT YFP-CFP (Tr=37h)/meta.json
+e17eb8524a8c28380ffe67f283276387792513721887d9999a74827ce0a340ca  ./empirical/observables/WT YFP-CFP (Tr=37h)/meta_full.json
+b9641822e06195bcec0a96580c008bfe779ae0529b55af5e8fd877af0d6442ff  ./empirical/observables/WT YFP-CFP (Tr=37h)/tracks.csv
+d202222417350ac23098927bce391fdb508a535cb34f4980957e2775a2344fe1  ./empirical/observables/WT YFP-CFP (Tr=37h)/tracks_full.csv
+13dea87bffe1852fe0a2302abea8b48ff36b12ba3dcc7d195b68fd878e68d3e7  ./empirical/observables/WT YFP-CFP (t1=0-1h;FC1)/counts.csv
+e236235586d5be096952159780be6c20cd1a220017459bea92d7f9770828d935  ./empirical/observables/WT YFP-CFP (t1=0-1h;FC1)/meta.json
+dabd3be93db694a3d743d38ae5ac3b9cb401189693dc57ce26517d57350a1f2a  ./empirical/observables/WT YFP-CFP (t1=0-1h;FC1)/meta_full.json
+afe303ec384f36e24ffc6776c04bd6c20149d34028f3e6a1e672ef2077dd4278  ./empirical/observables/WT YFP-CFP (t1=0-1h;FC1)/tracks.csv
+79338a7d8e21d63a49786f7fcdd9290abda463ed777762bcef72c2623896107a  ./empirical/observables/WT YFP-CFP (t1=0-1h;FC1)/tracks_full.csv
+0da830c9d43f172229b58ca896c21a3b15cbb17636c48b0fe3f8fd0d31c74427  ./empirical/observables/WT/counts.csv
+438948e482bb7a90b0e2abf2d864ba6e3180adfd21686562c89ece4977016331  ./empirical/observables/WT/meta.json
+6178c4fd43eb20667c01114afab7ce5ddcce9c6aa16233bebff9116133712312  ./empirical/observables/WT/tracks.csv
+40ffd93558e142a10b5b8b76d2511e6e68259feac05bcb947b55522ea7ed7ddc  ./empirical/observables/pilA/counts.csv
+fc93ad02934cb80ab5418e8f18a04e6e424c36e4bef538ba9fa33d00d3b6f6e0  ./empirical/observables/pilA/meta.json
+54d23aa54389ffa1f02c73499a3d2461f69e3cabcac40113527935df2ecdb2f2  ./empirical/observables/pilA/tracks.csv
+c11f9cc3531061651c8e5b2352595285f4fdac724b097200fb69e846c4d0ac48  ./empirical/observables/pilJ/counts.csv
+c8bf267d7fb26e80cbf827fa1424ce827c62f2b2d6306b0cb2cf449d20f546fa  ./empirical/observables/pilJ/meta.json
+00ff0634dbdbc4332a6c5b78ef44fd4eb62ae0603523a9785bfc0ccbb744f23f  ./empirical/observables/pilJ/tracks.csv
+260876c9dce437aa9f5f9ac7274b523efa75e683f3098e85e4094914cb52ebf3  ./empirical/observables/pilT/counts.csv
+b04ca1b9ff9bfb8395b689e7ca40c49a2fa970913bad8b9d636e38f9ef385361  ./empirical/observables/pilT/meta.json
+02ab870a0b3ab94cebce262856a76c03e5f0b241b0703ae7317effcf031aa740  ./empirical/observables/pilT/tracks.csv
+6d8c48adf5ef292e2a8776d62b5ff6db0059c2b74b3b635706b0674784cdc3c0  ./empirical/observables/pilU YFP-CFP/counts.csv
+6a8ee5aca0d580a158a29058bc770badfd403e722839d36d4570f12da61cd93c  ./empirical/observables/pilU YFP-CFP/meta.json
+fd2962c2524880727d6bcd105d37e8a5427257a6492846f5f4e1d0faba93987a  ./empirical/observables/pilU YFP-CFP/tracks.csv
+57b8a6f7e71b03279c3cada7a51ac0b60bdd339f15e46f327b773532c575a039  ./empirical/observables/pilU/counts.csv
+e3e27c9115c1bf82d8edfeab095d0b71e9a7e60878c6b68c556c32f77b5f246c  ./empirical/observables/pilU/meta.json
+1075051a2c3b4591e93ede91c31ce2d5a44bc920f4be6cef006c99f79db259cc  ./empirical/observables/pilU/tracks.csv
+27b7528d859954414a1e5fcd7a4b1c66d46a660561bdc38c5911ba8528100da1  ./empirical/occupancy.py
+e074db8cbf5318c8e31c90df998a25a043be37ed765840cc9d941e47a2bff781  ./empirical/run_all.sh
+c80781446c125ac7233ce258d3622b839c1debbecc1272b1c2050a6a37302fe3  ./empirical/run_v2.sh
+1a4148a579a884fbb6ec0437cfd98b89334fbb5e06ff5fa2fa6879763f335f55  ./empirical/run_v2_final.py
+ba6c3f024d529ae23a448109200aeaf409e044f8ca5a5ab4be0c4398e8dffd41  ./empirical/run_v2_parts.sh
+38b25d9e63b79b349ee2827cbd5d41fcd35dd98ddcb4f5c72f7e9fb0ed06f708  ./make_figures.py
+c5bae3270d3a195d24d2d5d1c230f416110e82faf69eb5472dcf946617b2ed7d  ./make_notebook.py
+7e446f13db078b23ebdd34843008edd67055c1e09dd2de84e85475cb005902aa  ./make_tables.py
+f9fda598af0e3a74a1e8aef22a755837377163770dd8d1b6c7f51428dfbc1f03  ./model.py
+e55dcef892eda2370c2b72209da7e733895ccd046a3c6c4823a1cf070de5abd4  ./recovery.py
+cbc163ead7abc3f590333486e6ea8b7e4498f6068fdff877cd0b0e04d6fd329c  ./requirements.txt
+a09d890e41f7b2cae3b0e8bb056157a0b5bb694ba8f36c58a18f6fc64b9d8c4c  ./results/empirical/empirical_fits.json
+d2b823c9eac2696dd7abc5e7557d8bb910677206e7cc9ec782c96e0cadeb0fbc  ./results/empirical/occupancy_correlations.txt
+0dd359a96128b84b131eb695a3a2127534774b8ec8b5e226d370b02c730ed8f4  ./results/empirical/occupancy_validation.csv
+4d8188e719a1e340d0e9ee90ced271ea409d0e3e2284a3d3a532fca8d9841a5e  ./results/empirical_v2/design_power.json
+c611e109b545ef2be7701540e6fe118bb9cfb2cded4c3956616894eda69dfac0  ./results/empirical_v2/fits_v2.json
+f539c089fac6d90f6dd35dd185e679cd1b5af91d0f8f7c6c49f5c7a0c5cff045  ./results/empirical_v2/part_P1_extended.json
+b4602ca8e7e86e82c29e5a755438faecbb013bca83062d625ede64ec4ce66ce9  ./results/empirical_v2/part_P1_first3h.json
+b9dc1a1538bdc7eb806f39a2c02ae59df58685d769f4c6fcd80349209d453bbe  ./results/empirical_v2/part_P2_P3.json
+4df6bde475f794eacf126dfcc440df60598dfc302b0f52d359635c827c0340d6  ./results/empirical_v2/part_S2.json
+c896a5c8ad03a836f4184cd39e16f856cb0146d05bf82394684a9a4da82f8e3e  ./results/empirical_v2/part_occupancy_adjusted.json
+388ffc0a52c4845cef5aeeb2be980fe4bf70472e5bc086465dace8ca07dbbe17  ./results/empirical_v2/part_time_matched.json
+721c41276632b9d2c67af58a29de322164f96603c26dcf184b3041fa2a9affff  ./results/figures/fig1_design.png
+e6803612c8ca7d1ed2994516ecad38ec7c6ff5006732b676204431762e2abbf4  ./results/figures/fig2_matched_baseline_transfer.png
+d3183e211f6a12e509b435135f971859beaff2b1915c31acaf1d6f0a7b3d1283  ./results/figures/fig3_gap_dependence.png
+ae464a9fd0d8ff64961fa2fa756da61c9a5037145cb9a580c6f07e673015f8d7  ./results/figures/fig4_event_signatures.png
+7ee7888c5e649d03921f15ce7cb7d65058679236c81c1aa01958ab70544f0447  ./results/figures/fig5_recovery.png
+372e0d429a4ee2822be3546a45eff1d90a2b2be5eb2ca0bbfb2f1dfdbe76b7b9  ./results/figures/fig6_empirical.png
+f0aa93e6b0c0d23898cdd3d5217be12a2d9423127586791b3eccb33e047e0ca3  ./results/figures/fig7_robustness_design.png
+7e0ab88398672808c504ee10aeb28e9be0c2d8360b1d6b18d172ee6433fb2d4f  ./results/logs/analyze_v2_quick.txt
+8821dddc885c2c053639b1826b72a778699ddfb48becc70792b6d6ad5faccdd5  ./results/logs/calibration.json
+6dca6fa76eb5510bab348f8a0afd8f92c6edd599555555aa6e8524763afb4c61  ./results/logs/config.json
+31251a2f020326b4580e65e2fbb61fb209c65a2380840b6b1238abdb8a6cf092  ./results/logs/ensemble_trajectories.csv
+286e5a0465cc4d18de728960a265398c2917459efe3ea44d442c448363424e0b  ./results/logs/recovery_details.json
+b3dff7396d82d2d290afc579c932a6cb3c3a4d3f1b9e85b61216267088c6be2d  ./results/logs/recovery_meta.json
+51c652f260f6d9b6e28b3efb46a4b2500ceaf9097907b1c7421c7d1edeb0e974  ./results/logs/run_audit.json
+730d81372a654542a2cb22034733beeffa511d0055bf449e53dc8c576f3a7687  ./results/recovery_pool.npz
+7f44398c358c8838adbc3e8745d285a8d11eee656aa52949ff7fbaaa1f7f3820  ./results/tables/effect_strength_sensitivity.csv
+384db71db33943df81ed6d62eb5b7fd8085a75f7323be7d213b5af8598eea70f  ./results/tables/event_signatures.csv
+5dda6489076b52673d17bbaa446f3055d2b106be874caa93ff2c02e3d8dada9c  ./results/tables/factorial_summary.csv
+bbedd75b2c53b9fc978aaf60d38298d5189eb0e7eaba86cd954873be0e2489ad  ./results/tables/factorial_trials.csv
+1c3e3a1c7fc31535bf1ed8de96a0906f1692a0c4aa66af6557d1de22f63f09c4  ./results/tables/paired_history_contrasts.csv
+d6b84aa1c1c4721eef2bfff7e6c42c42eb73a378451ad458e403570923f7ec53  ./results/tables/recovery_accuracy.csv
+7144acbad61c928f1bb39fb016f68315a59ec451be66052099214c9a56589c62  ./results/tables/recovery_prob_counts.npy
+86879703b43bd63cccef0f02e6f054e7a4618560bf0d0e844b13a3cc20d3b4c1  ./results/tables/recovery_prob_tracking.npy
+23b2ac853bff55683b7b161f104d438fbed171ecb5d84fc707bfb971a5ccdf63  ./results/tables/time_step_sensitivity.csv
+5a6bbe1a9b66685a1077009e1c501b6fb90132321a37acf9fa2c611abbe2be1b  ./run_experiments.py
+c4e49e39473f1ac5ae2628ed7d798f69d8226f2f3936ce500efa5766829e91ac  ./sources.json
+0be4e2ae606bc4595a06dde420ce020b0fd0ba65bb781601e3e57aa0d23b4082  ./test_model.py

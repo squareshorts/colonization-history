@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it using the metadata below."
+title: "Colonization history: stochastic model, mechanism recovery and re-analysis of tandem flow-cell experiments"
+version: 1.1.0
+date-released: 2026-11-05
+license: MIT
+repository-code: "https://github.com/squareshorts/colonization-history"
+authors:
+  - family-names: Pereira
+    given-names: Antonio
+    orcid: "https://orcid.org/0000-0002-0808-1058"
+    affiliation: "Universidade Federal do Pará"
+    email: apereira@ufpa.br
+keywords:
+  - biofilm
+  - surface sensing
+  - bacterial memory
+  - stochastic model
+  - identifiability
+  - experimental design
+  - Pseudomonas aeruginosa
+references:
+  - type: dataset
+    title: "Data for Multigenerational memory and adaptive adhesion in early bacterial biofilm communities"
+    doi: 10.6084/m9.figshare.5969335
+    authors:
+      - family-names: Lee
+        given-names: Calvin K.
+  - type: article
+    title: "Multigenerational memory and adaptive adhesion in early bacterial biofilm communities"
+    doi: 10.1073/pnas.1720071115
+    journal: "Proceedings of the National Academy of Sciences USA"
+    year: 2018
+    authors:
+      - family-names: Lee
+        given-names: Calvin K.

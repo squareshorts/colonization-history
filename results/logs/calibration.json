@@ -1,0 +1,72 @@
+{
+  "target_passive_fresh_curve": [
+    2.664,
+    5.021,
+    7.209,
+    8.784,
+    7.767,
+    7.141,
+    6.755,
+    6.316,
+    5.962,
+    5.719,
+    5.39,
+    5.195,
+    4.941,
+    4.773,
+    4.565,
+    4.468,
+    4.296,
+    4.146
+  ],
+  "target_integrated_occupancy": 99.13419999999999,
+  "obs_times": [
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0,
+    11.0,
+    12.0,
+    13.0,
+    14.0,
+    15.0,
+    16.0,
+    17.0,
+    18.0
+  ],
+  "baselines": {
+    "cell": {
+      "attachment_probability": 0.45807477774122013,
+      "detachment_rate": 1.693150536971707,
+      "division_rate": 0.2510631739040268,
+      "rms_log_error": 0.04542771581590454,
+      "evaluations": 318
+    },
+    "surface": {
+      "attachment_probability": 0.23142364098065596,
+      "detachment_rate": 1.5451592118777213,
+      "division_rate": 0.5362561747414291,
+      "rms_log_error": 0.040000265515241065,
+      "evaluations": 331
+    },
+    "both": {
+      "attachment_probability": 0.40011342114712123,
+      "detachment_rate": 3.273074935666925,
+      "division_rate": 0.20973206348592188,
+      "rms_log_error": 0.022030965244381674,
+      "evaluations": 285
+    }
+  },
+  "cell_transfer_effect_gap0": 36.147899999999964,
+  "surface_transfer_effect_gap0": 51.36530000000005,
+  "selection_shift": 0.15494282613779267,
+  "carryover_cells": 11.396144917424154,
+  "n": 1000,
+  "seed": 50021
+}

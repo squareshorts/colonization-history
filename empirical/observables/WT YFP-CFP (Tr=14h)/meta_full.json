@@ -1,0 +1,19 @@
+{
+ "zip": "WT YFP-CFP (Tr=14h).zip",
+ "frames": 13200,
+ "tracking_stopped_frame": null,
+ "stop_components": 250,
+ "registration": {
+  "dy": 1,
+  "dx": 0,
+  "corr": 0.7055925011725368,
+  "k": 33,
+  "phase": 299,
+  "step_frames": 300,
+  "K": 44
+ },
+ "fluorescence_used": true,
+ "n_tracks": 2095,
+ "n_readings": 302,
+ "seconds": 174.3062024799999
+}

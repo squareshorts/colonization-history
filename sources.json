@@ -1,0 +1,16 @@
+{
+  "review_date": "2026-11-04",
+  "empirical_data": {
+    "doi": "10.6084/m9.figshare.5969335",
+    "contents": "16 dataset zips (2.49 GB): bright-field binary stacks every 3 s, fluorescence stacks every 15 min for YFP-CFP datasets",
+    "used": "binary stacks of all 16 datasets; observables in empirical/observables",
+    "not_used": "fluorescence stacks (sampled too sparsely for residence-scale analysis)"
+  },
+  "closest_work": [
+    {"doi": "10.1073/pnas.1720071115", "overlap": "tandem flow-cell transfer experiments, cAMP-linked multigenerational memory, lag-based memory-loss series"},
+    {"doi": "10.1128/mBio.02644-19", "overlap": "divide-detach models and lineage statistics of reversible attachment"},
+    {"doi": "10.1038/nature12155", "overlap": "surface-deposited Psl trails guiding later cells"},
+    {"doi": "10.3389/fmicb.2022.920014", "overlap": "stochastic immigration-proliferation-detachment colonization model with establishment threshold"}
+  ],
+  "contribution_claimed": "baseline-matched comparison of history hypotheses with carryover and selection confounders; design-dependent recovery accuracy; dose-independent re-analysis of the deposited transfer experiments"
+}

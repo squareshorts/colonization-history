@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+nb_results/
+# manuscript sources are kept outside the public repository until publication
+manuscript/
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+.DS_Store

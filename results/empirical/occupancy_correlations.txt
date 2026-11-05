@@ -1,0 +1,3 @@
+Spearman initial occupancy vs lag: SignificanceResult(statistic=np.float64(-0.6666666666666667), pvalue=np.float64(0.049867230568885125))
+Spearman arrival rate vs lag: SignificanceResult(statistic=np.float64(-0.8166666666666667), pvalue=np.float64(0.0072247852463587885))
+Spearman arrival rate vs lag, exposed runs: SignificanceResult(statistic=np.float64(-0.7142857142857143), pvalue=np.float64(0.11078717201166179))

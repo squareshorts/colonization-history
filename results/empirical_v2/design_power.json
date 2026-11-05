@@ -1,0 +1,44 @@
+[
+ {
+  "truth": "offset",
+  "attached_per_group": 250,
+  "reps": 20,
+  "power_correct": 0.8,
+  "power_LR_gt_3": 0.0
+ },
+ {
+  "truth": "offset",
+  "attached_per_group": 1000,
+  "reps": 20,
+  "power_correct": 1.0,
+  "power_LR_gt_3": 0.7
+ },
+ {
+  "truth": "offset",
+  "attached_per_group": 3000,
+  "reps": 20,
+  "power_correct": 0.95,
+  "power_LR_gt_3": 0.95
+ },
+ {
+  "truth": "head",
+  "attached_per_group": 250,
+  "reps": 20,
+  "power_correct": 0.55,
+  "power_LR_gt_3": 0.0
+ },
+ {
+  "truth": "head",
+  "attached_per_group": 1000,
+  "reps": 20,
+  "power_correct": 0.8,
+  "power_LR_gt_3": 0.05
+ },
+ {
+  "truth": "head",
+  "attached_per_group": 3000,
+  "reps": 20,
+  "power_correct": 0.85,
+  "power_LR_gt_3": 0.45
+ }
+]

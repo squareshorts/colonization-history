@@ -1,0 +1,21 @@
+{
+  "title": "Colonization history: stochastic model, mechanism recovery and re-analysis of tandem flow-cell experiments",
+  "upload_type": "software",
+  "version": "1.1.0",
+  "description": "<p>Code, simulation outputs and derived observables for a study of how bacterial colonization history can be attributed to cells or surfaces. A stochastic attachment-division-detachment simulator implements six hypotheses (heterogeneous passive dynamics, residual-cell carryover, adhesive selection, cell history, surface history and both histories) calibrated to a common fresh-cell baseline. The package contains the calibrated factorial comparison, a random-forest mechanism-recovery study over experimental designs, observable extraction and residence-time analyses of the Pseudomonas aeruginosa tandem flow-cell image series of Lee et al. (2018), a pre-specified analysis plan with its deviations log, prospective power calculations, unit tests and an executed reproduction notebook.</p><p>Derived observables are released under CC BY 4.0 with attribution to the original deposit (doi:10.6084/m9.figshare.5969335); code is released under the MIT licence.</p>",
+  "creators": [
+    {
+      "name": "Pereira, Antonio",
+      "affiliation": "Universidade Federal do Pará",
+      "orcid": "0000-0002-0808-1058"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": ["biofilm", "surface sensing", "bacterial memory", "stochastic model", "identifiability", "experimental design", "Pseudomonas aeruginosa", "approximate Bayesian computation"],
+  "related_identifiers": [
+    {"identifier": "10.6084/m9.figshare.5969335", "relation": "isDerivedFrom", "scheme": "doi", "resource_type": "dataset"},
+    {"identifier": "10.1073/pnas.1720071115", "relation": "references", "scheme": "doi", "resource_type": "publication-article"}
+  ],
+  "language": "eng"
+}
