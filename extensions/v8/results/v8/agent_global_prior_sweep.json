@@ -1,0 +1,63 @@
+{
+  "scope": "Latin-hypercube synthetic parameter perturbations; not an empirical prior, not a biological fit",
+  "selection_comparator": "Immutable adhesive selection; no growth cost or phenotype change in holding tube",
+  "pseudo_holdout_warning": "37h exposure was known to model developer, so this is not blinded or prospective validation",
+  "criteria": {
+    "early0": "fresh minus 0h > 6 synthetic h",
+    "early14": "fresh minus 14h > 6 synthetic h and >=0.65 of immediate advantage",
+    "late37": "37h advantage <=0.5 of immediate advantage and 37h threshold at least 4 synthetic h later than 14h"
+  },
+  "n_parameter_draws": 160,
+  "reps_per_arm": 5,
+  "seed": 2026110709,
+  "model": {
+    "cell_memory": {
+      "parameter_draws": 160,
+      "fields_per_arm": 5,
+      "early_qualifying_draws": 96,
+      "early_fraction": 0.6,
+      "late_washout_given_early": 0.40625,
+      "late_washout_count_given_early": 39,
+      "all_three_criteria_count": 39,
+      "all_three_criteria_fraction": 0.24375,
+      "median_early_advantage_0_h": 9.24,
+      "median_advantage_37_h": 3.1699999999999995
+    },
+    "cell_one_bit": {
+      "parameter_draws": 160,
+      "fields_per_arm": 5,
+      "early_qualifying_draws": 86,
+      "early_fraction": 0.5375,
+      "late_washout_given_early": 0.3372093023255814,
+      "late_washout_count_given_early": 29,
+      "all_three_criteria_count": 29,
+      "all_three_criteria_fraction": 0.18125,
+      "median_early_advantage_0_h": 9.790000000000001,
+      "median_advantage_37_h": 3.1800000000000006
+    },
+    "cell_no_inheritance": {
+      "parameter_draws": 160,
+      "fields_per_arm": 5,
+      "early_qualifying_draws": 96,
+      "early_fraction": 0.6,
+      "late_washout_given_early": 0.40625,
+      "late_washout_count_given_early": 39,
+      "all_three_criteria_count": 39,
+      "all_three_criteria_fraction": 0.24375,
+      "median_early_advantage_0_h": 9.4,
+      "median_advantage_37_h": 3.0800000000000005
+    },
+    "selection": {
+      "parameter_draws": 160,
+      "fields_per_arm": 5,
+      "early_qualifying_draws": 153,
+      "early_fraction": 0.95625,
+      "late_washout_given_early": 0.0,
+      "late_washout_count_given_early": 0,
+      "all_three_criteria_count": 0,
+      "all_three_criteria_fraction": 0.0,
+      "median_early_advantage_0_h": 12.240000000000002,
+      "median_advantage_37_h": 12.16
+    }
+  }
+}

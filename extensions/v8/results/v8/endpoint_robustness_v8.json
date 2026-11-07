@@ -1,0 +1,227 @@
+{
+  "scope": "Uncalibrated stochastic simulations; log-linear onset is an explicit alternative readout, not published Lee fit",
+  "n_fields": 16,
+  "seed": 87000,
+  "summary": [
+    {
+      "model": "passive",
+      "arm": "fresh",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 24.425000000000004,
+      "ensemble_threshold_h": 19.0,
+      "log_linear_onset_h": 4.825816086080482,
+      "log_linear_fit_r2": 0.9931634010777888,
+      "fit_points": 90,
+      "max_ensemble_count": 515.0
+    },
+    {
+      "model": "passive",
+      "arm": "0h",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 29.5625,
+      "ensemble_threshold_h": 19.400000000000002,
+      "log_linear_onset_h": 6.113268166611529,
+      "log_linear_fit_r2": 0.9990644494894884,
+      "fit_points": 77,
+      "max_ensemble_count": 358.3125
+    },
+    {
+      "model": "passive",
+      "arm": "14h",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 30.0375,
+      "ensemble_threshold_h": 20.6,
+      "log_linear_onset_h": 4.098822397524626,
+      "log_linear_fit_r2": 0.9786292540562329,
+      "fit_points": 105,
+      "max_ensemble_count": 356.75
+    },
+    {
+      "model": "passive",
+      "arm": "37h",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 29.962500000000002,
+      "ensemble_threshold_h": 22.700000000000003,
+      "log_linear_onset_h": 9.353106072308128,
+      "log_linear_fit_r2": 0.9978613683329864,
+      "fit_points": 83,
+      "max_ensemble_count": 462.4375
+    },
+    {
+      "model": "cell_memory",
+      "arm": "fresh",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 17.80625,
+      "ensemble_threshold_h": 11.100000000000001,
+      "log_linear_onset_h": 3.9366696057278845,
+      "log_linear_fit_r2": 0.9917137725260157,
+      "fit_points": 42,
+      "max_ensemble_count": 562.5
+    },
+    {
+      "model": "cell_memory",
+      "arm": "0h",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 5.3125,
+      "ensemble_threshold_h": 5.1000000000000005,
+      "log_linear_onset_h": -0.9379832813466279,
+      "log_linear_fit_r2": 0.9990021793396413,
+      "fit_points": 34,
+      "max_ensemble_count": 600.0
+    },
+    {
+      "model": "cell_memory",
+      "arm": "14h",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 5.36875,
+      "ensemble_threshold_h": 5.2,
+      "log_linear_onset_h": -0.8560007146871849,
+      "log_linear_fit_r2": 0.9991943566975002,
+      "fit_points": 34,
+      "max_ensemble_count": 600.0
+    },
+    {
+      "model": "cell_memory",
+      "arm": "37h",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 18.4375,
+      "ensemble_threshold_h": 11.700000000000001,
+      "log_linear_onset_h": 0.5764957344420855,
+      "log_linear_fit_r2": 0.9477497879002988,
+      "fit_points": 58,
+      "max_ensemble_count": 563.5625
+    },
+    {
+      "model": "cell_one_bit",
+      "arm": "fresh",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 18.3625,
+      "ensemble_threshold_h": 10.9,
+      "log_linear_onset_h": 0.14951039912934255,
+      "log_linear_fit_r2": 0.9314513710700105,
+      "fit_points": 62,
+      "max_ensemble_count": 541.0625
+    },
+    {
+      "model": "cell_one_bit",
+      "arm": "0h",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 6.018750000000001,
+      "ensemble_threshold_h": 5.7,
+      "log_linear_onset_h": -0.8429689310732155,
+      "log_linear_fit_r2": 0.9992199390497454,
+      "fit_points": 38,
+      "max_ensemble_count": 600.0
+    },
+    {
+      "model": "cell_one_bit",
+      "arm": "14h",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 8.28125,
+      "ensemble_threshold_h": 7.4,
+      "log_linear_onset_h": 1.1963645669895167,
+      "log_linear_fit_r2": 0.9988386804792864,
+      "fit_points": 36,
+      "max_ensemble_count": 600.0
+    },
+    {
+      "model": "cell_one_bit",
+      "arm": "37h",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 20.51875,
+      "ensemble_threshold_h": 10.700000000000001,
+      "log_linear_onset_h": 2.6132145061929815,
+      "log_linear_fit_r2": 0.9765143046216488,
+      "fit_points": 50,
+      "max_ensemble_count": 562.5
+    },
+    {
+      "model": "cell_no_inheritance",
+      "arm": "fresh",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 18.175,
+      "ensemble_threshold_h": 11.700000000000001,
+      "log_linear_onset_h": 3.955559436865343,
+      "log_linear_fit_r2": 0.995514189609433,
+      "fit_points": 46,
+      "max_ensemble_count": 562.5
+    },
+    {
+      "model": "cell_no_inheritance",
+      "arm": "0h",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 5.65,
+      "ensemble_threshold_h": 5.4,
+      "log_linear_onset_h": -1.1387636766930225,
+      "log_linear_fit_r2": 0.9995705189533611,
+      "fit_points": 37,
+      "max_ensemble_count": 600.0
+    },
+    {
+      "model": "cell_no_inheritance",
+      "arm": "14h",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 5.49375,
+      "ensemble_threshold_h": 5.300000000000001,
+      "log_linear_onset_h": -0.9100281137102302,
+      "log_linear_fit_r2": 0.9987289580102494,
+      "fit_points": 36,
+      "max_ensemble_count": 600.0
+    },
+    {
+      "model": "cell_no_inheritance",
+      "arm": "37h",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 18.806250000000002,
+      "ensemble_threshold_h": 12.100000000000001,
+      "log_linear_onset_h": 2.814178654205576,
+      "log_linear_fit_r2": 0.9765691428021881,
+      "fit_points": 54,
+      "max_ensemble_count": 563.3125
+    },
+    {
+      "model": "selection",
+      "arm": "fresh",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 15.756250000000001,
+      "ensemble_threshold_h": 12.0,
+      "log_linear_onset_h": 2.709153855999002,
+      "log_linear_fit_r2": 0.9920994339818583,
+      "fit_points": 57,
+      "max_ensemble_count": 600.0
+    },
+    {
+      "model": "selection",
+      "arm": "0h",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 5.831250000000001,
+      "ensemble_threshold_h": 5.4,
+      "log_linear_onset_h": -1.0109672286424254,
+      "log_linear_fit_r2": 0.9996849852513144,
+      "fit_points": 37,
+      "max_ensemble_count": 600.0
+    },
+    {
+      "model": "selection",
+      "arm": "14h",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 5.6875,
+      "ensemble_threshold_h": 5.5,
+      "log_linear_onset_h": -1.009765865413181,
+      "log_linear_fit_r2": 0.9996188701275606,
+      "fit_points": 39,
+      "max_ensemble_count": 600.0
+    },
+    {
+      "model": "selection",
+      "arm": "37h",
+      "n_fields": 16,
+      "mean_restricted_first_passage_h": 5.612500000000001,
+      "ensemble_threshold_h": 5.300000000000001,
+      "log_linear_onset_h": -0.9976738280780172,
+      "log_linear_fit_r2": 0.9993809804439711,
+      "fit_points": 36,
+      "max_ensemble_count": 600.0
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "observed_pair_differences": [
+    0.136187,
+    0.038469,
+    -0.126263
+  ],
+  "estimated_sd_n3": 0.13264328218194843,
+  "alpha_two_sided": 0.05,
+  "target_power": 0.8,
+  "method": "Student-t noncentral distribution, hypothetical independent paired observations",
+  "warning": "n=3 variance is unstable; original series differ in timing, and no randomized exposure assignment supports exact t assumptions. These are sensitivity numbers, NOT validated prospective sample sizes.",
+  "results": [
+    {
+      "hypothesized_true_mean_difference": 0.05,
+      "sd_inflation": 1.0,
+      "assumed_pair_sd": 0.13264328218194843,
+      "required_independent_pairs_for_nominal_80percent_power": 58,
+      "achieved_power": 0.8056928884135879
+    },
+    {
+      "hypothesized_true_mean_difference": 0.05,
+      "sd_inflation": 1.5,
+      "assumed_pair_sd": 0.19896492327292264,
+      "required_independent_pairs_for_nominal_80percent_power": 127,
+      "achieved_power": 0.8024500299496454
+    },
+    {
+      "hypothesized_true_mean_difference": 0.05,
+      "sd_inflation": 2.0,
+      "assumed_pair_sd": 0.26528656436389686,
+      "required_independent_pairs_for_nominal_80percent_power": 223,
+      "achieved_power": 0.8002130040315159
+    },
+    {
+      "hypothesized_true_mean_difference": 0.1,
+      "sd_inflation": 1.0,
+      "assumed_pair_sd": 0.13264328218194843,
+      "required_independent_pairs_for_nominal_80percent_power": 16,
+      "achieved_power": 0.8045909091912907
+    },
+    {
+      "hypothesized_true_mean_difference": 0.1,
+      "sd_inflation": 1.5,
+      "assumed_pair_sd": 0.19896492327292264,
+      "required_independent_pairs_for_nominal_80percent_power": 34,
+      "achieved_power": 0.8117716582439811
+    },
+    {
+      "hypothesized_true_mean_difference": 0.1,
+      "sd_inflation": 2.0,
+      "assumed_pair_sd": 0.26528656436389686,
+      "required_independent_pairs_for_nominal_80percent_power": 58,
+      "achieved_power": 0.8056928884135879
+    },
+    {
+      "hypothesized_true_mean_difference": 0.15,
+      "sd_inflation": 1.0,
+      "assumed_pair_sd": 0.13264328218194843,
+      "required_independent_pairs_for_nominal_80percent_power": 9,
+      "achieved_power": 0.8429549246053205
+    },
+    {
+      "hypothesized_true_mean_difference": 0.15,
+      "sd_inflation": 1.5,
+      "assumed_pair_sd": 0.19896492327292264,
+      "required_independent_pairs_for_nominal_80percent_power": 16,
+      "achieved_power": 0.8045909091912906
+    },
+    {
+      "hypothesized_true_mean_difference": 0.15,
+      "sd_inflation": 2.0,
+      "assumed_pair_sd": 0.26528656436389686,
+      "required_independent_pairs_for_nominal_80percent_power": 27,
+      "achieved_power": 0.8073185493533555
+    },
+    {
+      "hypothesized_true_mean_difference": 0.2,
+      "sd_inflation": 1.0,
+      "assumed_pair_sd": 0.13264328218194843,
+      "required_independent_pairs_for_nominal_80percent_power": 6,
+      "achieved_power": 0.8361597274849992
+    },
+    {
+      "hypothesized_true_mean_difference": 0.2,
+      "sd_inflation": 1.5,
+      "assumed_pair_sd": 0.19896492327292264,
+      "required_independent_pairs_for_nominal_80percent_power": 10,
+      "achieved_power": 0.8070817803222867
+    },
+    {
+      "hypothesized_true_mean_difference": 0.2,
+      "sd_inflation": 2.0,
+      "assumed_pair_sd": 0.26528656436389686,
+      "required_independent_pairs_for_nominal_80percent_power": 16,
+      "achieved_power": 0.8045909091912907
+    }
+  ]
+}

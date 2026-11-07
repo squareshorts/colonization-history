@@ -1,0 +1,107 @@
+{
+  "source": "Lee et al. PNAS 2018 Fig 4; published fit point values, not independent replicate estimates",
+  "observations": {
+    "naive": 17.56,
+    "0h": 4.68,
+    "14h": 5.46,
+    "37h": 13.41
+  },
+  "advantages": {
+    "0": 12.879999999999999,
+    "14": 12.099999999999998,
+    "37": 4.149999999999999
+  },
+  "normalized_advantages": {
+    "14": 0.9394409937888197,
+    "37": 0.3222049689440993
+  },
+  "linear_exponential": {
+    "tau_fitted_to_0_14_h": 224.1066099400343,
+    "prediction_37_h": 6.640221060438822,
+    "observed_37_h": 13.41,
+    "prediction_error_observed_minus_predicted_h": 6.769778939561178,
+    "effective_rate_0_to_14_hinv": 0.004462162005250879,
+    "effective_rate_14_to_37_hinv": 0.046525961667829935,
+    "late_to_early_rate_ratio": 10.42677554357735
+  },
+  "nonnegative_exponential_mixture": {
+    "minimum_possible_normalized_37_from_normalized_14": 0.8478089238789733,
+    "observed_normalized_37": 0.3222049689440993,
+    "violates_log_convexity_at_point_estimates": true
+  },
+  "two_parameter_effective_hill_in_time": {
+    "h": 3.586238508251363,
+    "half_decay_h": 30.070776999492995,
+    "prediction_24h": 8.649207293406658,
+    "note": "Two freely fitted parameters and two nonzero-hold observations: exact interpolation is not validation"
+  },
+  "single_state_tau10_h_hill_family_fitted_only_at_14h": [
+    {
+      "hill_exponent": 0.05,
+      "x": 8.012409523226117,
+      "pred_37h": 6.6509371592939655,
+      "pred_24h": 5.991311333172872
+    },
+    {
+      "hill_exponent": 0.1,
+      "x": 0.7512185876627637,
+      "pred_37h": 6.7552136767203805,
+      "pred_24h": 6.02247721988973
+    },
+    {
+      "hill_exponent": 0.2,
+      "x": 0.24921157052984433,
+      "pred_37h": 6.990786735328101,
+      "pred_24h": 6.089738866768004
+    },
+    {
+      "hill_exponent": 0.5,
+      "x": 0.06790634776954241,
+      "pred_37h": 7.953950965912762,
+      "pred_24h": 6.335914946222413
+    },
+    {
+      "hill_exponent": 1.0,
+      "x": 0.021554154221825557,
+      "pred_37h": 10.530635091473135,
+      "pred_24h": 6.928400070124303
+    },
+    {
+      "hill_exponent": 2.0,
+      "x": 0.004191289914351005,
+      "pred_37h": 15.913802588962778,
+      "pred_24h": 8.990392209601163
+    },
+    {
+      "hill_exponent": 3.0,
+      "x": 0.0009823373161280315,
+      "pred_37h": 17.364663883023667,
+      "pred_24h": 11.992678205372762
+    },
+    {
+      "hill_exponent": 4.0,
+      "x": 0.0002393166934148655,
+      "pred_37h": 17.53991781557757,
+      "pred_24h": 14.718222178195223
+    },
+    {
+      "hill_exponent": 5.0,
+      "x": 5.883958730763188e-05,
+      "pred_37h": 17.557978118462447,
+      "pred_24h": 16.342125515298047
+    },
+    {
+      "hill_exponent": 7.0,
+      "x": 3.5747769191832686e-06,
+      "pred_37h": 17.559979655795953,
+      "pred_24h": 17.38035252838138
+    },
+    {
+      "hill_exponent": 10.0,
+      "x": 5.3602725205850455e-08,
+      "pred_37h": 17.559999979496254,
+      "pred_24h": 17.550935252879384
+    }
+  ],
+  "note": "All calculations are descriptive algebra on published fit summaries; do not use their within-trajectory CIs as biological replicate errors."
+}

@@ -1,0 +1,22 @@
+{
+  "relative_suspension_fitness_cost_per_hour": 0.14567471879186006,
+  "fraction_of_high_adhesiveness_type_immediately_after_selection": 0.9903590438205548,
+  "high_adhesive_type_fraction_14h": 0.9303838843345277,
+  "high_adhesive_type_fraction_37h": 0.31909860495771114,
+  "predicted_lags_h": {
+    "0": 4.68,
+    "7": 4.89639428804548,
+    "14": 5.459999999999997,
+    "21": 6.789024888075597,
+    "24": 7.715995486879704,
+    "30": 10.210915870527263,
+    "37": 13.409999999999982,
+    "48": 16.438318697785828
+  },
+  "model": "two immutable adhesive phenotypes; relative planktonic growth cost changes population composition during hold; observable lag advantage proportional to high-adhesive frequency",
+  "warnings": [
+    "Both free parameters tuned to two nonzero hold-time points. This is exact interpolation, not biological validation or prospective prediction.",
+    "Requires experimentally unmeasured initial composition and relative growth cost.",
+    "The lag mapping is phenomenological; not derived from a flow-cell agent simulator."
+  ]
+}

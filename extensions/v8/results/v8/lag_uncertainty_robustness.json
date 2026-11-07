@@ -1,0 +1,98 @@
+{
+  "origin": "Lee et al 2018 reported fitted lag point estimates; uniform bounded perturbations are not uncertainty distributions",
+  "baseline_margin": -0.5256039549348741,
+  "positive_margin_means_positive_exponential_mixture_might_fit": true,
+  "perturbations": [
+    {
+      "certified_upper_margin_via_interval_envelopes": -0.5256039549348741,
+      "incompatibility_guaranteed_by_interval_envelope": true,
+      "each_lag_perturbed_within_plusminus_h": 0.0,
+      "maximum_attainable_margin": -0.5256039549348741,
+      "any_compatible_positive_exponential_mixture": false,
+      "maximizing_lags": [
+        17.56,
+        4.68,
+        5.46,
+        13.41
+      ]
+    },
+    {
+      "certified_upper_margin_via_interval_envelopes": -0.397310561728317,
+      "incompatibility_guaranteed_by_interval_envelope": true,
+      "each_lag_perturbed_within_plusminus_h": 0.25,
+      "maximum_attainable_margin": -0.41909399251506907,
+      "any_compatible_positive_exponential_mixture": false,
+      "maximizing_lags": [
+        17.80999999975715,
+        4.430000000239779,
+        5.709999999994914,
+        13.160000000059004
+      ]
+    },
+    {
+      "certified_upper_margin_via_interval_envelopes": -0.27513423797369785,
+      "incompatibility_guaranteed_by_interval_envelope": true,
+      "each_lag_perturbed_within_plusminus_h": 0.5,
+      "maximum_attainable_margin": -0.32474726024890194,
+      "any_compatible_positive_exponential_mixture": false,
+      "maximizing_lags": [
+        18.059999999665173,
+        4.180000000289469,
+        5.959999999995259,
+        12.910000000062906
+      ]
+    },
+    {
+      "certified_upper_margin_via_interval_envelopes": -0.04844662438787728,
+      "incompatibility_guaranteed_by_interval_envelope": true,
+      "each_lag_perturbed_within_plusminus_h": 1.0,
+      "maximum_attainable_margin": -0.16562216540162628,
+      "any_compatible_positive_exponential_mixture": false,
+      "maximizing_lags": [
+        18.559999999480326,
+        3.680000000856189,
+        6.459999999924663,
+        12.41000000006205
+      ]
+    },
+    {
+      "certified_upper_margin_via_interval_envelopes": 0.33923765178219284,
+      "incompatibility_guaranteed_by_interval_envelope": false,
+      "each_lag_perturbed_within_plusminus_h": 2.0,
+      "maximum_attainable_margin": 0.0679833453430489,
+      "any_compatible_positive_exponential_mixture": true,
+      "maximizing_lags": [
+        19.55999999651776,
+        2.680000000102999,
+        7.4599999997846,
+        11.410000000038934
+      ]
+    },
+    {
+      "certified_upper_margin_via_interval_envelopes": 0.649315039944943,
+      "incompatibility_guaranteed_by_interval_envelope": false,
+      "each_lag_perturbed_within_plusminus_h": 3.0,
+      "maximum_attainable_margin": 0.22903424384636067,
+      "any_compatible_positive_exponential_mixture": true,
+      "maximizing_lags": [
+        20.55999993335661,
+        1.6800000002249713,
+        8.45999999997051,
+        10.410000001109244
+      ]
+    },
+    {
+      "certified_upper_margin_via_interval_envelopes": 0.8947772412974934,
+      "incompatibility_guaranteed_by_interval_envelope": false,
+      "each_lag_perturbed_within_plusminus_h": 4.0,
+      "maximum_attainable_margin": 0.3508166950766724,
+      "any_compatible_positive_exponential_mixture": true,
+      "maximizing_lags": [
+        13.560000002369044,
+        6.2064766633179,
+        9.45999999999549,
+        9.410000000029875
+      ]
+    }
+  ]
+}
