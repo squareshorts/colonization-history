@@ -1,4 +1,4 @@
-# Additional independently audited analyses (unreleased working tree)
+# Additional independently audited analyses (post-v1.1.0 repository update)
 
 These additions complement the original repository and **do not change or refit** the v1.1.0 stochastic simulator or the Zenodo DOI associated with that release.
 
