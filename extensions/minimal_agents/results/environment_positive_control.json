@@ -1,0 +1,14 @@
+{
+  "fresh_surface": {
+    "n_fields": 60,
+    "mean_n8": 4.333333333333333,
+    "mean_restricted_lag_h": 24.10000000000001,
+    "cross_fraction": 0.9
+  },
+  "conditioned_surface": {
+    "n_fields": 60,
+    "mean_n8": 99.9,
+    "mean_restricted_lag_h": 8.415,
+    "cross_fraction": 1.0
+  }
+}

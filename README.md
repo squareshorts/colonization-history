@@ -98,3 +98,17 @@ which should be cited alongside this repository.
 - **1.0.0** Heritable cell heterogeneity in every hypothesis, carryover and selection
   confounders, calibrated baselines, recovery study and empirical re-analysis.
 - **0.1.0** Four mechanisms at shared rates (superseded).
+
+## Additional research extensions (November 2026)
+
+The `extensions/` directory provides additive, explicitly **model-conditional** analyses, separate from the archived v1.1.0 release:
+
+- `extensions/v7/` reports a field-level reanalysis of deposited tandem-flow-cell tracks and a calibration-aware partial-identification benchmark with explicit invalid-calibration and nonlinear-model failure controls.
+- `extensions/minimal_agents/` contains a nonspatial stochastic-agent capability ablation testing which minimal **constructed** rules are sufficient for qualitative transfer, short-hold, and washout patterns. Its parameters are illustrative, not fitted to bacterial measurements. The corresponding biochemical correlation examples are separate signal models.
+- `extensions/identifiability/` provides an exactly tested, ordered six-arm counterfactual decomposition. Carrier-selective interventions assumed by that decomposition have not been empirically demonstrated in this study.
+
+**Interpretive boundary.** The archived three matched flow-cell experiments provide heterogeneous conditional five-minute residence effects (mean FC2–FC1 difference +0.0161, 95% paired-t CI −0.3134 to +0.3456). This statistic does not challenge the original Lee et al. (2018) growth-lag, lineage or molecular evidence. The synthetic agent and assay performance numbers do not identify the carrier of bacterial memory, establish a universal minimal mechanism, or characterize real assay errors. A misleading older classifier feature set includes exact `initial_residual` and `retained_residual` values; treating these oracle variables as routinely observable would overstate practical recovery accuracy. The new extensions should be evaluated on observable inputs only.
+
+**Versioning.** This is new repository content since DOI 10.5281/zenodo.23990601 was minted. Do not assume the existing DOI archives the extensions. Source manuscript files remain private/outside this GitHub repository, as recorded in `.gitignore`.
+
+To run the additional tests: `cd extensions/v7 && python -m pytest tests -q`, `cd extensions/minimal_agents && python -m unittest discover -s tests -v`, and `cd extensions/identifiability && python -m unittest discover -p 'test_*.py' -v`.

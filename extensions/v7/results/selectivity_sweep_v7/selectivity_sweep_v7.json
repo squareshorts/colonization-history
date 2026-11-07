@@ -1,0 +1,249 @@
+{
+  "n_independent_fields": [
+    32,
+    128
+  ],
+  "replicates": 500,
+  "q_nominal": 0.075,
+  "q_bounds": [
+    0.0,
+    0.2
+  ],
+  "seed": 20261107,
+  "rows": [
+    {
+      "n_fields": 32,
+      "q_selection_true": 0.0,
+      "inside_stipulated_bounds": true,
+      "point_false_A": 0.0,
+      "bounded_false_A": 0.0,
+      "feasible_rate": 0.994,
+      "bounded_A_coverage": 1.0
+    },
+    {
+      "n_fields": 32,
+      "q_selection_true": 0.025,
+      "inside_stipulated_bounds": true,
+      "point_false_A": 0.0,
+      "bounded_false_A": 0.0,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 1.0
+    },
+    {
+      "n_fields": 32,
+      "q_selection_true": 0.05,
+      "inside_stipulated_bounds": true,
+      "point_false_A": 0.002,
+      "bounded_false_A": 0.0,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 1.0
+    },
+    {
+      "n_fields": 32,
+      "q_selection_true": 0.075,
+      "inside_stipulated_bounds": true,
+      "point_false_A": 0.03,
+      "bounded_false_A": 0.0,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 1.0
+    },
+    {
+      "n_fields": 32,
+      "q_selection_true": 0.1,
+      "inside_stipulated_bounds": true,
+      "point_false_A": 0.144,
+      "bounded_false_A": 0.0,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 1.0
+    },
+    {
+      "n_fields": 32,
+      "q_selection_true": 0.125,
+      "inside_stipulated_bounds": true,
+      "point_false_A": 0.426,
+      "bounded_false_A": 0.0,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 1.0
+    },
+    {
+      "n_fields": 32,
+      "q_selection_true": 0.15,
+      "inside_stipulated_bounds": true,
+      "point_false_A": 0.756,
+      "bounded_false_A": 0.0,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 1.0
+    },
+    {
+      "n_fields": 32,
+      "q_selection_true": 0.175,
+      "inside_stipulated_bounds": true,
+      "point_false_A": 0.958,
+      "bounded_false_A": 0.0,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 1.0
+    },
+    {
+      "n_fields": 32,
+      "q_selection_true": 0.2,
+      "inside_stipulated_bounds": true,
+      "point_false_A": 0.996,
+      "bounded_false_A": 0.0,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 1.0
+    },
+    {
+      "n_fields": 32,
+      "q_selection_true": 0.225,
+      "inside_stipulated_bounds": false,
+      "point_false_A": 0.996,
+      "bounded_false_A": 0.002,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 0.998
+    },
+    {
+      "n_fields": 32,
+      "q_selection_true": 0.25,
+      "inside_stipulated_bounds": false,
+      "point_false_A": 1.0,
+      "bounded_false_A": 0.022,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 0.978
+    },
+    {
+      "n_fields": 32,
+      "q_selection_true": 0.275,
+      "inside_stipulated_bounds": false,
+      "point_false_A": 1.0,
+      "bounded_false_A": 0.102,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 0.898
+    },
+    {
+      "n_fields": 32,
+      "q_selection_true": 0.3,
+      "inside_stipulated_bounds": false,
+      "point_false_A": 1.0,
+      "bounded_false_A": 0.398,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 0.602
+    },
+    {
+      "n_fields": 128,
+      "q_selection_true": 0.0,
+      "inside_stipulated_bounds": true,
+      "point_false_A": 0.0,
+      "bounded_false_A": 0.0,
+      "feasible_rate": 0.996,
+      "bounded_A_coverage": 1.0
+    },
+    {
+      "n_fields": 128,
+      "q_selection_true": 0.025,
+      "inside_stipulated_bounds": true,
+      "point_false_A": 0.0,
+      "bounded_false_A": 0.0,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 1.0
+    },
+    {
+      "n_fields": 128,
+      "q_selection_true": 0.05,
+      "inside_stipulated_bounds": true,
+      "point_false_A": 0.0,
+      "bounded_false_A": 0.0,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 1.0
+    },
+    {
+      "n_fields": 128,
+      "q_selection_true": 0.075,
+      "inside_stipulated_bounds": true,
+      "point_false_A": 0.036,
+      "bounded_false_A": 0.0,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 1.0
+    },
+    {
+      "n_fields": 128,
+      "q_selection_true": 0.1,
+      "inside_stipulated_bounds": true,
+      "point_false_A": 0.456,
+      "bounded_false_A": 0.0,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 1.0
+    },
+    {
+      "n_fields": 128,
+      "q_selection_true": 0.125,
+      "inside_stipulated_bounds": true,
+      "point_false_A": 0.958,
+      "bounded_false_A": 0.0,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 1.0
+    },
+    {
+      "n_fields": 128,
+      "q_selection_true": 0.15,
+      "inside_stipulated_bounds": true,
+      "point_false_A": 0.998,
+      "bounded_false_A": 0.0,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 1.0
+    },
+    {
+      "n_fields": 128,
+      "q_selection_true": 0.175,
+      "inside_stipulated_bounds": true,
+      "point_false_A": 1.0,
+      "bounded_false_A": 0.0,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 1.0
+    },
+    {
+      "n_fields": 128,
+      "q_selection_true": 0.2,
+      "inside_stipulated_bounds": true,
+      "point_false_A": 1.0,
+      "bounded_false_A": 0.0,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 1.0
+    },
+    {
+      "n_fields": 128,
+      "q_selection_true": 0.225,
+      "inside_stipulated_bounds": false,
+      "point_false_A": 1.0,
+      "bounded_false_A": 0.018,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 0.982
+    },
+    {
+      "n_fields": 128,
+      "q_selection_true": 0.25,
+      "inside_stipulated_bounds": false,
+      "point_false_A": 1.0,
+      "bounded_false_A": 0.432,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 0.568
+    },
+    {
+      "n_fields": 128,
+      "q_selection_true": 0.275,
+      "inside_stipulated_bounds": false,
+      "point_false_A": 1.0,
+      "bounded_false_A": 0.898,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 0.102
+    },
+    {
+      "n_fields": 128,
+      "q_selection_true": 0.3,
+      "inside_stipulated_bounds": false,
+      "point_false_A": 1.0,
+      "bounded_false_A": 0.994,
+      "feasible_rate": 1.0,
+      "bounded_A_coverage": 0.006
+    }
+  ]
+}
