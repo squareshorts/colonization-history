@@ -1,0 +1,826 @@
+{
+  "analytical_equivalence": {
+    "source": "Published Lee et al 2018 reported lag point values used for algebra; not independent biological replicates",
+    "selection_frequency_initial": 0.9903590438205548,
+    "relative_growth_disadvantage_per_h": 0.14567471879186009,
+    "intracellular_state_initial": 0.85,
+    "intracellular_state_tau_h": 10.0,
+    "hill_exponent": 1.456747187918601,
+    "hill_midpoint": 0.0353577277824474,
+    "lag_curve_max_abs_difference_h_0_to_60h": 3.552713678800501e-15,
+    "holds_h": [
+      0,
+      7,
+      14,
+      21,
+      30,
+      37,
+      48,
+      60
+    ],
+    "lags_selection_h": [
+      4.68,
+      4.89639428804548,
+      5.459999999999997,
+      6.789024888075602,
+      10.210915870527268,
+      13.409999999999991,
+      16.43831869778583,
+      17.34973198725605
+    ],
+    "lags_intracellular_h": [
+      4.68,
+      4.89639428804548,
+      5.459999999999997,
+      6.789024888075602,
+      10.210915870527266,
+      13.40999999999999,
+      16.43831869778583,
+      17.34973198725605
+    ],
+    "proof": "f(t)=[1+q exp(c t)]^-1 and h(m0 exp(-t/tau))=[1+(K/m0)^nu exp(nu t/tau)]^-1; set (K/m0)^nu=q and nu/tau=c",
+    "scope": "Exact equivalence of phenomenological lag curves ONLY. Not equivalence of bacterial cAMP or lineage data."
+  },
+  "minimal_rank_design": {
+    "column_order": [
+      "acquired_cell",
+      "selection",
+      "environment_trace",
+      "viable_carryover"
+    ],
+    "pre_rows": [
+      "exposed_cells_on_virgin",
+      "fresh_cells_on_conditioned",
+      "both_history"
+    ],
+    "additional_rows": [
+      "randomized_no_selection_contact_pulse",
+      "washed_and_viable_free_conditioned_surface"
+    ],
+    "pre_matrix": [
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "full_matrix": [
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "rank_pre": 2,
+    "rank_full": 4,
+    "rank_without_pulse": 3,
+    "rank_without_washed_surface": 3,
+    "assumption": "All measurements are on a common additive scale; pulse eliminates sorting/selection; washing eliminates all viable carryover while preserving deposited trace; no interactions."
+  },
+  "lag_only_negative_control": {
+    "n_per_class": 2500,
+    "holds_h": [
+      0.0,
+      5.0,
+      11.0,
+      14.0,
+      21.0,
+      28.0,
+      37.0,
+      48.0
+    ],
+    "measurement_noise_sd_assumed_h": 0.75,
+    "lag_only_holdout_roc_auc": 0.5218429387755102,
+    "chance_auc_under_exact_equivalence": 0.5,
+    "scope": "Monte Carlo sanity check of analytic equivalence, not a biological classifier benchmark"
+  },
+  "field_level_simulations": {
+    "n_datasets_each": 2000,
+    "cells_each_arm_per_clone": 48,
+    "alpha_per_test_bonferroni_one_sided": 0.025,
+    "independent_test_family": "Kinetic attachment-plus-survival Bernoulli agents with persistent phenotype heterogeneity and clone random intercepts",
+    "randomization": "Pulse/sham assigned within matched clonal blocks; full recovery required for selection-null contrast",
+    "result_file": "intervention_power.csv"
+  },
+  "selected_32block": {
+    "intracellular_inherited": {
+      "model": "intracellular_inherited",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 1.0,
+      "hold_h": 0.0,
+      "mother_positive_count": 2000,
+      "mother_positive_fraction": 1.0,
+      "mother_positive_beta_interval": [
+        0.9981581802674402,
+        0.9999873475023402
+      ],
+      "daughter_positive_count": 1968,
+      "daughter_positive_fraction": 0.984,
+      "daughter_positive_beta_interval": [
+        0.9774985014940967,
+        0.988621344277959
+      ],
+      "joint_positive_count": 1968,
+      "joint_positive_fraction": 0.984,
+      "joint_positive_beta_interval": [
+        0.9774985014940967,
+        0.988621344277959
+      ],
+      "mother_avg_observed_risk_difference_pp": 12.345865885416666,
+      "mother_avg_true_risk_difference_pp": 12.385682553790685,
+      "daughter_avg_observed_risk_difference_pp": 10.182421875,
+      "daughter_avg_true_risk_difference_pp": 10.147997586675594
+    },
+    "intracellular_no_inheritance": {
+      "model": "intracellular_no_inheritance",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 1.0,
+      "hold_h": 0.0,
+      "mother_positive_count": 1998,
+      "mother_positive_fraction": 0.999,
+      "mother_positive_beta_interval": [
+        0.9963941719892597,
+        0.9996907117482629
+      ],
+      "daughter_positive_count": 51,
+      "daughter_positive_fraction": 0.0255,
+      "daughter_positive_beta_interval": [
+        0.019467853281424818,
+        0.033376124109177285
+      ],
+      "joint_positive_count": 51,
+      "joint_positive_fraction": 0.0255,
+      "joint_positive_beta_interval": [
+        0.019467853281424818,
+        0.033376124109177285
+      ],
+      "mother_avg_observed_risk_difference_pp": 12.439876302083333,
+      "mother_avg_true_risk_difference_pp": 12.398607645321427,
+      "daughter_avg_observed_risk_difference_pp": 0.009244791666666667,
+      "daughter_avg_true_risk_difference_pp": 0.0
+    },
+    "immutable_selection": {
+      "model": "immutable_selection",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 1.0,
+      "hold_h": 0.0,
+      "mother_positive_count": 60,
+      "mother_positive_fraction": 0.03,
+      "mother_positive_beta_interval": [
+        0.023396948165380346,
+        0.03842972511033394
+      ],
+      "daughter_positive_count": 51,
+      "daughter_positive_fraction": 0.0255,
+      "daughter_positive_beta_interval": [
+        0.019467853281424818,
+        0.033376124109177285
+      ],
+      "joint_positive_count": 1,
+      "joint_positive_fraction": 0.0005,
+      "joint_positive_beta_interval": [
+        0.00012106704555999886,
+        0.002781250798354134
+      ],
+      "mother_avg_observed_risk_difference_pp": -0.001399739583333337,
+      "mother_avg_true_risk_difference_pp": 0.0,
+      "daughter_avg_observed_risk_difference_pp": -0.0005533854166666588,
+      "daughter_avg_true_risk_difference_pp": 0.0
+    },
+    "cell_coating": {
+      "model": "cell_coating",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 1.0,
+      "hold_h": 0.0,
+      "mother_positive_count": 1999,
+      "mother_positive_fraction": 0.9995,
+      "mother_positive_beta_interval": [
+        0.9972187492016459,
+        0.99987893295444
+      ],
+      "daughter_positive_count": 1969,
+      "daughter_positive_fraction": 0.9845,
+      "daughter_positive_beta_interval": [
+        0.978081534194276,
+        0.9890364330414727
+      ],
+      "joint_positive_count": 1968,
+      "joint_positive_fraction": 0.984,
+      "joint_positive_beta_interval": [
+        0.9774985014940967,
+        0.988621344277959
+      ],
+      "mother_avg_observed_risk_difference_pp": 12.131673177083334,
+      "mother_avg_true_risk_difference_pp": 12.125503870903662,
+      "daughter_avg_observed_risk_difference_pp": 9.8134765625,
+      "daughter_avg_true_risk_difference_pp": 9.830063632742243
+    },
+    "selection_with_loss": {
+      "model": "selection_with_loss",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 8.0,
+      "hold_h": 0.0,
+      "mother_positive_count": 1756,
+      "mother_positive_fraction": 0.878,
+      "mother_positive_beta_interval": [
+        0.8629179705662744,
+        0.8916122828613479
+      ],
+      "daughter_positive_count": 1782,
+      "daughter_positive_fraction": 0.891,
+      "daughter_positive_beta_interval": [
+        0.8765759081014199,
+        0.903903823895517
+      ],
+      "joint_positive_count": 1597,
+      "joint_positive_fraction": 0.7985,
+      "joint_positive_beta_interval": [
+        0.7803470957746703,
+        0.815492207946177
+      ],
+      "mother_avg_observed_risk_difference_pp": 3.96103515625,
+      "mother_avg_true_risk_difference_pp": 3.947435450956981,
+      "daughter_avg_observed_risk_difference_pp": 3.981412760416667,
+      "daughter_avg_true_risk_difference_pp": 3.947435450956981
+    }
+  },
+  "leakage_32block": {
+    "1.0": {
+      "model": "selection_with_loss",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 1.0,
+      "hold_h": 0.0,
+      "mother_positive_count": 28,
+      "mother_positive_fraction": 0.014,
+      "mother_positive_beta_interval": [
+        0.009726938304550117,
+        0.020160702477881945
+      ],
+      "daughter_positive_count": 49,
+      "daughter_positive_fraction": 0.0245,
+      "daughter_positive_beta_interval": [
+        0.018601776751055447,
+        0.032246036369942555
+      ],
+      "joint_positive_count": 0,
+      "joint_positive_fraction": 0.0,
+      "joint_positive_beta_interval": [
+        1.2652497659769609e-05,
+        0.0018418197325598229
+      ],
+      "mother_avg_observed_risk_difference_pp": -0.016308593750000003,
+      "mother_avg_true_risk_difference_pp": 9.568084172184576e-19,
+      "daughter_avg_observed_risk_difference_pp": -0.0007161458333333425,
+      "daughter_avg_true_risk_difference_pp": 9.568084172184576e-19,
+      "scenario": "selective_loss_sweep"
+    },
+    "1.5": {
+      "model": "selection_with_loss",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 1.5,
+      "hold_h": 0.0,
+      "mother_positive_count": 197,
+      "mother_positive_fraction": 0.0985,
+      "mother_positive_beta_interval": [
+        0.08621246293514265,
+        0.11234860449734456
+      ],
+      "daughter_positive_count": 209,
+      "daughter_positive_fraction": 0.1045,
+      "daughter_positive_beta_interval": [
+        0.09185513045603066,
+        0.11868262382677998
+      ],
+      "joint_positive_count": 23,
+      "joint_positive_fraction": 0.0115,
+      "joint_positive_beta_interval": [
+        0.007699486239718616,
+        0.01719737427596323
+      ],
+      "mother_avg_observed_risk_difference_pp": 0.6315104166666666,
+      "mother_avg_true_risk_difference_pp": 0.6714865740862885,
+      "daughter_avg_observed_risk_difference_pp": 0.6611002604166666,
+      "daughter_avg_true_risk_difference_pp": 0.6714865740862885,
+      "scenario": "selective_loss_sweep"
+    },
+    "2.0": {
+      "model": "selection_with_loss",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 2.0,
+      "hold_h": 0.0,
+      "mother_positive_count": 544,
+      "mother_positive_fraction": 0.272,
+      "mother_positive_beta_interval": [
+        0.2529535536520888,
+        0.2919330263410137
+      ],
+      "daughter_positive_count": 490,
+      "daughter_positive_fraction": 0.245,
+      "daughter_positive_beta_interval": [
+        0.22665737512303144,
+        0.26433418844841733
+      ],
+      "joint_positive_count": 175,
+      "joint_positive_fraction": 0.0875,
+      "joint_positive_beta_interval": [
+        0.07590698467269594,
+        0.10069681654846696
+      ],
+      "mother_avg_observed_risk_difference_pp": 1.267545572916667,
+      "mother_avg_true_risk_difference_pp": 1.2268672551654483,
+      "daughter_avg_observed_risk_difference_pp": 1.2154622395833334,
+      "daughter_avg_true_risk_difference_pp": 1.2268672551654483,
+      "scenario": "selective_loss_sweep"
+    },
+    "4.0": {
+      "model": "selection_with_loss",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 4.0,
+      "hold_h": 0.0,
+      "mother_positive_count": 1328,
+      "mother_positive_fraction": 0.664,
+      "mother_positive_beta_interval": [
+        0.6429959865940736,
+        0.6843662916538457
+      ],
+      "daughter_positive_count": 1327,
+      "daughter_positive_fraction": 0.6635,
+      "daughter_positive_beta_interval": [
+        0.6424893830460799,
+        0.6838748394390022
+      ],
+      "joint_positive_count": 1014,
+      "joint_positive_fraction": 0.507,
+      "joint_positive_beta_interval": [
+        0.485094188467697,
+        0.5288785914727112
+      ],
+      "mother_avg_observed_risk_difference_pp": 2.620247395833333,
+      "mother_avg_true_risk_difference_pp": 2.630827097073459,
+      "daughter_avg_observed_risk_difference_pp": 2.624837239583334,
+      "daughter_avg_true_risk_difference_pp": 2.630827097073459,
+      "scenario": "selective_loss_sweep"
+    },
+    "8.0": {
+      "model": "selection_with_loss",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 8.0,
+      "hold_h": 0.0,
+      "mother_positive_count": 1744,
+      "mother_positive_fraction": 0.872,
+      "mother_positive_beta_interval": [
+        0.8566324979918489,
+        0.8859210752739962
+      ],
+      "daughter_positive_count": 1759,
+      "daughter_positive_fraction": 0.8795,
+      "daughter_positive_beta_interval": [
+        0.8644910598558164,
+        0.8930333638135259
+      ],
+      "joint_positive_count": 1581,
+      "joint_positive_fraction": 0.7905,
+      "joint_positive_beta_interval": [
+        0.77210784112391,
+        0.8077625665527784
+      ],
+      "mother_avg_observed_risk_difference_pp": 3.963899739583333,
+      "mother_avg_true_risk_difference_pp": 3.955142678613933,
+      "daughter_avg_observed_risk_difference_pp": 3.9448242187500004,
+      "daughter_avg_true_risk_difference_pp": 3.955142678613933,
+      "scenario": "selective_loss_sweep"
+    },
+    "16.0": {
+      "model": "selection_with_loss",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 16.0,
+      "hold_h": 0.0,
+      "mother_positive_count": 1891,
+      "mother_positive_fraction": 0.9455,
+      "mother_positive_beta_interval": [
+        0.9346624481584687,
+        0.9546056530324051
+      ],
+      "daughter_positive_count": 1875,
+      "daughter_positive_fraction": 0.9375,
+      "daughter_positive_beta_interval": [
+        0.9260215205579188,
+        0.9472776121024001
+      ],
+      "joint_positive_count": 1801,
+      "joint_positive_fraction": 0.9005,
+      "joint_positive_beta_interval": [
+        0.8865947287670995,
+        0.9128480891610601
+      ],
+      "mother_avg_observed_risk_difference_pp": 4.992708333333333,
+      "mother_avg_true_risk_difference_pp": 4.954586506495102,
+      "daughter_avg_observed_risk_difference_pp": 4.927473958333333,
+      "daughter_avg_true_risk_difference_pp": 4.954586506495102,
+      "scenario": "selective_loss_sweep"
+    }
+  },
+  "weak_effect_32block": {
+    "0.25": {
+      "model": "intracellular_inherited",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 1.0,
+      "hold_h": 0.0,
+      "mother_positive_count": 1189,
+      "mother_positive_fraction": 0.5945,
+      "mother_positive_beta_interval": [
+        0.572815865173307,
+        0.6158166649675894
+      ],
+      "daughter_positive_count": 959,
+      "daughter_positive_fraction": 0.4795,
+      "daughter_positive_beta_interval": [
+        0.45766389381656186,
+        0.501415822063962
+      ],
+      "joint_positive_count": 673,
+      "joint_positive_fraction": 0.3365,
+      "joint_positive_beta_interval": [
+        0.31612516056099776,
+        0.35751061695392006
+      ],
+      "mother_avg_observed_risk_difference_pp": 2.248665364583333,
+      "mother_avg_true_risk_difference_pp": 2.223213602143634,
+      "daughter_avg_observed_risk_difference_pp": 1.9001627604166669,
+      "daughter_avg_true_risk_difference_pp": 1.880122857495434,
+      "scenario": "strength_sweep",
+      "amplitude_scale": 0.25
+    },
+    "0.5": {
+      "model": "intracellular_inherited",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 1.0,
+      "hold_h": 0.0,
+      "mother_positive_count": 1904,
+      "mother_positive_fraction": 0.952,
+      "mother_positive_beta_interval": [
+        0.9417264863085457,
+        0.9605164210797652
+      ],
+      "daughter_positive_count": 1726,
+      "daughter_positive_fraction": 0.863,
+      "daughter_positive_beta_interval": [
+        0.8472238358988233,
+        0.8773647192485048
+      ],
+      "joint_positive_count": 1664,
+      "joint_positive_fraction": 0.832,
+      "joint_positive_beta_interval": [
+        0.814972785962757,
+        0.8477362764896292
+      ],
+      "mother_avg_observed_risk_difference_pp": 4.941438802083333,
+      "mother_avg_true_risk_difference_pp": 4.939915078443046,
+      "daughter_avg_observed_risk_difference_pp": 4.14052734375,
+      "daughter_avg_true_risk_difference_pp": 4.145733680108095,
+      "scenario": "strength_sweep",
+      "amplitude_scale": 0.5
+    },
+    "0.75": {
+      "model": "intracellular_inherited",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 1.0,
+      "hold_h": 0.0,
+      "mother_positive_count": 1990,
+      "mother_positive_fraction": 0.995,
+      "mother_positive_beta_interval": [
+        0.9908286809552075,
+        0.9972526933921113
+      ],
+      "daughter_positive_count": 1911,
+      "daughter_positive_fraction": 0.9555,
+      "daughter_positive_beta_interval": [
+        0.9455490715615072,
+        0.9636802799615106
+      ],
+      "joint_positive_count": 1903,
+      "joint_positive_fraction": 0.9515,
+      "joint_positive_beta_interval": [
+        0.9411815436967952,
+        0.9600633008871864
+      ],
+      "mother_avg_observed_risk_difference_pp": 8.428255208333333,
+      "mother_avg_true_risk_difference_pp": 8.37089666143963,
+      "daughter_avg_observed_risk_difference_pp": 6.856705729166666,
+      "daughter_avg_true_risk_difference_pp": 6.888966037705339,
+      "scenario": "strength_sweep",
+      "amplitude_scale": 0.75
+    },
+    "1.0": {
+      "model": "intracellular_inherited",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 1.0,
+      "hold_h": 0.0,
+      "mother_positive_count": 2000,
+      "mother_positive_fraction": 1.0,
+      "mother_positive_beta_interval": [
+        0.9981581802674402,
+        0.9999873475023402
+      ],
+      "daughter_positive_count": 1955,
+      "daughter_positive_fraction": 0.9775,
+      "daughter_positive_beta_interval": [
+        0.9700229983662425,
+        0.9831215310073859
+      ],
+      "joint_positive_count": 1955,
+      "joint_positive_fraction": 0.9775,
+      "joint_positive_beta_interval": [
+        0.9700229983662425,
+        0.9831215310073859
+      ],
+      "mother_avg_observed_risk_difference_pp": 12.345377604166666,
+      "mother_avg_true_risk_difference_pp": 12.316768067373468,
+      "daughter_avg_observed_risk_difference_pp": 9.9294921875,
+      "daughter_avg_true_risk_difference_pp": 9.929550462674067,
+      "scenario": "strength_sweep",
+      "amplitude_scale": 1.0
+    },
+    "1.5": {
+      "model": "intracellular_inherited",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 1.0,
+      "hold_h": 0.0,
+      "mother_positive_count": 2000,
+      "mother_positive_fraction": 1.0,
+      "mother_positive_beta_interval": [
+        0.9981581802674402,
+        0.9999873475023402
+      ],
+      "daughter_positive_count": 1993,
+      "daughter_positive_fraction": 0.9965,
+      "daughter_positive_beta_interval": [
+        0.9928056287892434,
+        0.998272414986642
+      ],
+      "joint_positive_count": 1993,
+      "joint_positive_fraction": 0.9965,
+      "joint_positive_beta_interval": [
+        0.9928056287892434,
+        0.998272414986642
+      ],
+      "mother_avg_observed_risk_difference_pp": 22.299837239583333,
+      "mother_avg_true_risk_difference_pp": 22.289264888071983,
+      "daughter_avg_observed_risk_difference_pp": 17.976888020833336,
+      "daughter_avg_true_risk_difference_pp": 17.97958975899954,
+      "scenario": "strength_sweep",
+      "amplitude_scale": 1.5
+    }
+  },
+  "hold_32block": {
+    "0.0": {
+      "model": "intracellular_inherited",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 1.0,
+      "hold_h": 0.0,
+      "mother_positive_count": 2000,
+      "mother_positive_fraction": 1.0,
+      "mother_positive_beta_interval": [
+        0.9981581802674402,
+        0.9999873475023402
+      ],
+      "daughter_positive_count": 1955,
+      "daughter_positive_fraction": 0.9775,
+      "daughter_positive_beta_interval": [
+        0.9700229983662425,
+        0.9831215310073859
+      ],
+      "joint_positive_count": 1955,
+      "joint_positive_fraction": 0.9775,
+      "joint_positive_beta_interval": [
+        0.9700229983662425,
+        0.9831215310073859
+      ],
+      "mother_avg_observed_risk_difference_pp": 12.345377604166666,
+      "mother_avg_true_risk_difference_pp": 12.316768067373468,
+      "daughter_avg_observed_risk_difference_pp": 9.9294921875,
+      "daughter_avg_true_risk_difference_pp": 9.929550462674067,
+      "scenario": "washout_sweep"
+    },
+    "7.0": {
+      "model": "intracellular_inherited",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 1.0,
+      "hold_h": 7.0,
+      "mother_positive_count": 1876,
+      "mother_positive_fraction": 0.938,
+      "mother_positive_beta_interval": [
+        0.9265600468801414,
+        0.9477371457190077
+      ],
+      "daughter_positive_count": 1547,
+      "daughter_positive_fraction": 0.7735,
+      "daughter_positive_beta_interval": [
+        0.7546333384738837,
+        0.7913031665849386
+      ],
+      "joint_positive_count": 1527,
+      "joint_positive_fraction": 0.7635,
+      "joint_positive_beta_interval": [
+        0.7443745578969375,
+        0.7816008287703623
+      ],
+      "mother_avg_observed_risk_difference_pp": 8.660514322916667,
+      "mother_avg_true_risk_difference_pp": 8.679008160021729,
+      "daughter_avg_observed_risk_difference_pp": 5.65087890625,
+      "daughter_avg_true_risk_difference_pp": 5.63896100835639,
+      "scenario": "washout_sweep"
+    },
+    "14.0": {
+      "model": "intracellular_inherited",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 1.0,
+      "hold_h": 14.0,
+      "mother_positive_count": 1328,
+      "mother_positive_fraction": 0.664,
+      "mother_positive_beta_interval": [
+        0.6429959865940736,
+        0.6843662916538457
+      ],
+      "daughter_positive_count": 897,
+      "daughter_positive_fraction": 0.4485,
+      "daughter_positive_beta_interval": [
+        0.4268220430114991,
+        0.4703782187083087
+      ],
+      "joint_positive_count": 842,
+      "joint_positive_fraction": 0.421,
+      "joint_positive_beta_interval": [
+        0.399533811380207,
+        0.4427733858902452
+      ],
+      "mother_avg_observed_risk_difference_pp": 4.78408203125,
+      "mother_avg_true_risk_difference_pp": 4.779259267747975,
+      "daughter_avg_observed_risk_difference_pp": 2.71884765625,
+      "daughter_avg_true_risk_difference_pp": 2.729470430545518,
+      "scenario": "washout_sweep"
+    },
+    "37.0": {
+      "model": "intracellular_inherited",
+      "n_experiments": 2000,
+      "n_blocks": 32,
+      "cells_per_arm_per_clone": 48,
+      "selection_survival_odds": 1.0,
+      "hold_h": 37.0,
+      "mother_positive_count": 177,
+      "mother_positive_fraction": 0.0885,
+      "mother_positive_beta_interval": [
+        0.07684157510396154,
+        0.10175834166827463
+      ],
+      "daughter_positive_count": 89,
+      "daughter_positive_fraction": 0.0445,
+      "daughter_positive_beta_interval": [
+        0.03631972003848941,
+        0.054450928438492745
+      ],
+      "joint_positive_count": 33,
+      "joint_positive_fraction": 0.0165,
+      "joint_positive_beta_interval": [
+        0.011795076284583452,
+        0.023083195491838
+      ],
+      "mother_avg_observed_risk_difference_pp": 0.31396484375,
+      "mother_avg_true_risk_difference_pp": 0.3164361818261475,
+      "daughter_avg_observed_risk_difference_pp": 0.11396484375,
+      "daughter_avg_true_risk_difference_pp": 0.14155432910038185,
+      "scenario": "washout_sweep"
+    }
+  },
+  "failure_boundaries": [
+    "The same kinetic signature can be generated by an inherited extracellular coating carried on cells; the randomized clone experiment does not identify intracellular location.",
+    "Differential survival/recovery during the surface pulse can enrich pre-existing phenotypes and yield a false apparent within-clone acquired effect.",
+    "Functional and cross-reactive bacterial assay behavior is uncalibrated; true biological effect sizes are unknown.",
+    "The four-carrier rank criterion is exact only in an additive readout and with genuinely carrier-selective manipulations."
+  ],
+  "five_carrier_state_vs_coating_nonidentifiability": {
+    "columns": [
+      "intracellular",
+      "selected_type",
+      "environmental_trace",
+      "residual_viable_cell",
+      "cell_coating"
+    ],
+    "rank_with_sister_and_surface_controls": 4,
+    "rank_with_one_selective_localization_assay": 5,
+    "null_direction": [
+      1,
+      0,
+      0,
+      0,
+      -1
+    ],
+    "caution": "Selective intracellular-versus-cell-coating perturbation has not been validated; molecular colocalization is suggestive but may not equal selective intervention."
+  },
+  "calibration_geometry_scope": "Gaussian additive four-carrier contrast errors, field SD=0.12, n=32; illustrative scale only",
+  "design_ill_conditioning_examples": [
+    {
+      "selection_leakage_kappa": 0.0,
+      "trace_retention_q": 1.0,
+      "viable_cell_retention_rho": 0.0,
+      "matrix_condition_number": 2.6180339887498953,
+      "acquired_95pct_halfwidth_at_32_independent_fields": 0.04157787873376899,
+      "environment_95pct_halfwidth_at_32_independent_fields": 0.04157787873376899,
+      "determinant": -1.0
+    },
+    {
+      "selection_leakage_kappa": 0.8,
+      "trace_retention_q": 0.75,
+      "viable_cell_retention_rho": 0.25,
+      "matrix_condition_number": 18.144888059008807,
+      "acquired_95pct_halfwidth_at_32_independent_fields": 0.26622832306124006,
+      "environment_95pct_halfwidth_at_32_independent_fields": 0.0857149928542259,
+      "determinant": -0.09999999999999998
+    },
+    {
+      "selection_leakage_kappa": 0.99,
+      "trace_retention_q": 0.6,
+      "viable_cell_retention_rho": 0.5,
+      "matrix_condition_number": 398.0074874844559,
+      "acquired_95pct_halfwidth_at_32_independent_fields": 5.850673868880399,
+      "environment_95pct_halfwidth_at_32_independent_fields": 0.4648548160447518,
+      "determinant": -0.0010000000000000002
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "parameter_draws": 1000,
+  "sampling": "independent parameter stress for f0 in [0.05,0.95], c in [0.04,0.25]/h, tau in [6,25]h, m0 in [0.4,0.95]; no fitted bacterial observations",
+  "holding_times_count": 121,
+  "max_abs_fraction_difference": 4.440892098500626e-16,
+  "median_max_abs_fraction_difference": 1.1102230246251565e-16,
+  "all_parameter_draws_satisfy_1e-12": true
+}
