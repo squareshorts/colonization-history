@@ -1,0 +1,110 @@
+{
+  "relative5_h": {
+    "paired": [
+      {
+        "series": 1,
+        "difference_h": -9.924999999999999,
+        "upper_bound_h": -9.924999999999999,
+        "status": "observed_pair"
+      },
+      {
+        "series": 2,
+        "difference_h": -7.574999999999999,
+        "upper_bound_h": -7.574999999999999,
+        "status": "observed_pair"
+      },
+      {
+        "series": 3,
+        "difference_h": -13.591666599999998,
+        "upper_bound_h": -13.591666599999998,
+        "status": "observed_pair"
+      }
+    ],
+    "naive_mean_h": 23.013888899999998,
+    "transfer_mean_h": 12.650000033333333,
+    "paired_mean_h": -10.363888866666665,
+    "r14": 1.304744037104785,
+    "r37": 0.7000804131869854
+  },
+  "absolute20_h": {
+    "paired": [
+      {
+        "series": 1,
+        "difference_h": -23.15,
+        "upper_bound_h": -23.15,
+        "status": "observed_pair"
+      },
+      {
+        "series": 2,
+        "difference_h": -14.825000000000001,
+        "upper_bound_h": -14.825000000000001,
+        "status": "observed_pair"
+      },
+      {
+        "series": 3,
+        "difference_h": -20.625,
+        "upper_bound_h": -20.625,
+        "status": "observed_pair"
+      }
+    ],
+    "naive_mean_h": 24.213888866666668,
+    "transfer_mean_h": 4.680555533333334,
+    "paired_mean_h": -19.533333333333335,
+    "r14": 0.8957622269624573,
+    "r37": 0.4341581348122867
+  },
+  "absolute30_h": {
+    "paired": [
+      {
+        "series": 1,
+        "difference_h": -24.8583333,
+        "upper_bound_h": -24.8583333,
+        "status": "observed_pair"
+      },
+      {
+        "series": 2,
+        "difference_h": -12.2833333,
+        "upper_bound_h": -12.2833333,
+        "status": "observed_pair"
+      },
+      {
+        "series": 3,
+        "difference_h": -19.325,
+        "upper_bound_h": -19.325,
+        "status": "observed_pair"
+      }
+    ],
+    "naive_mean_h": 25.24444443333333,
+    "transfer_mean_h": 6.422222233333333,
+    "paired_mean_h": -18.8222222,
+    "r14": 0.9312278617842122,
+    "r37": 0.4836186522829028
+  },
+  "absolute50_h": {
+    "paired": [
+      {
+        "series": 1,
+        "difference_h": -21.8,
+        "upper_bound_h": -21.8,
+        "status": "observed_pair"
+      },
+      {
+        "series": 2,
+        "difference_h": null,
+        "upper_bound_h": -11.6333334,
+        "status": "earlier_censored"
+      },
+      {
+        "series": 3,
+        "difference_h": -15.174999999999999,
+        "upper_bound_h": -15.174999999999999,
+        "status": "observed_pair"
+      }
+    ],
+    "naive_mean_h": null,
+    "transfer_mean_h": null,
+    "paired_mean_h": null,
+    "r14": null,
+    "r37": null
+  }
+}

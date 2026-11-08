@@ -22,6 +22,16 @@ python paper/analysis/calibration_stress.py
 
 `FIGURE_AND_RESULT_MAP.md` maps every main and supplementary figure and the central numerical claims to the exact scripts and tables. The earlier exploratory analyses remain archived under `archive/previous_extensions/`, and the main article LaTeX sources are supplied privately as an Overleaf ZIP. The README and CITATION metadata identify the current source revision separately from the earlier archived DOI.
 
-## Directly observed surface-occupancy expansion
+## Directly observed surface occupancy and observation-rule sensitivity
 
-The current manuscript's main empirical endpoint is time to a sustained fivefold increase in recorded occupied area, measured within the archived flow-cell time series. The 26.75-hour FC1 series-2 recording reaches the threshold and contributes to the three paired comparisons without extrapolating its narrowly supported exponential lag. Recompute with `python paper/analysis/observed_establishment.py --repo . --out paper/results/observed_establishment.csv --sensitivity paper/results/observed_establishment_sensitivity.csv`. The fitted exponential lags remain secondary sensitivity results. The observed threshold combines initial surface delivery with later attachment and population expansion; it is a retrospective operational endpoint, not a biological memory marker.
+Archived occupied-area records have substantially different early cell-area references in FC1 and FC2. The current article compares the original retrospective fivefold increase against common absolute thresholds of 20, 30 and 50 cell-area equivalents, applying a shared 262-pixel calibration. At 20 equivalents, FC2 series 1 is already above threshold in the initial frame, so its new crossing time is left-censored. At 50 equivalents, FC1 series 2 remains below threshold to the end of the recording, so the matched difference is a bound. The sign of the transfer-associated difference is negative under all tested thresholds, smoothing widths and persistence requirements. The inferred normalized holding-time advantage depends on the observation rule, with 37-hour values ranging from approximately 0.30 to 0.70.
+
+To reproduce the archival contrasts:
+
+```sh
+python paper/analysis/observed_establishment.py --repo . --out paper/results/observed_establishment.csv --sensitivity paper/results/observed_establishment_sensitivity.csv
+python paper/analysis/endpoint_observation_comparison.py --repo . --records paper/results/endpoint_observation_comparison.csv --summary paper/results/endpoint_observation_summary.json --sensitivity paper/results/absolute_threshold_sensitivity.csv
+python paper/analysis/make_endpoint_comparison_figure.py --csv paper/results/endpoint_observation_comparison.csv --out paper/figures/endpoint_comparison.pdf
+```
+
+The threshold results summarize occupancy progression and cannot attribute its biological carrier. No new experiment or longer recording of FC1 series 2 was performed. The original exponential-lag calculation remains secondary and extrapolation-dependent.

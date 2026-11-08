@@ -1,0 +1,10 @@
+record,source_record,record_end_h,local_cell_area_px,shared_cell_area_px,early_baseline_cell_eq,relative_fivefold_target,relative5_h,absolute20_h,absolute20_status,absolute30_h,absolute30_status,absolute50_h,absolute50_status
+FC1-1,WT YFP-CFP (T=29.5h;FC1),29.4916667,240.5,262.0,1.0,5.0,21.0166667,23.15,observed,24.9333333,observed,25.9583333,observed
+FC2-1,WT YFP-CFP (T=29.5h;FC2),12.4916667,276.0,262.0,33.451449,167.257246,11.0916667,0.0,at_start,0.075,observed,4.1583333,observed
+FC1-2,WT YFP-CFP (T=26.75h;FC1),26.7416667,262.0,262.0,3.065267,15.326336,24.3666667,25.4833333,observed,26.425,observed,,after_end
+FC2-2,WT YFP-CFP (T=26.75h;FC2),18.4916667,342.0,262.0,12.549781,62.748904,16.7916667,10.6583333,observed,14.1416667,observed,15.1083333,observed
+FC1-3,"WT YFP-CFP (T1=32.5h,T2=14.75h;FC1)",29.4916667,305.5,262.0,2.290507,11.452537,23.6583333,24.0083333,observed,24.375,observed,25.775,observed
+FC2-3,"WT YFP-CFP (T1=32.5h,T2=14.75h;FC2)",14.4916667,266.0,262.0,9.053008,45.265038,10.0666667,3.3833333,observed,5.05,observed,10.6,observed
+FC3-3,"WT YFP-CFP (T1=32.5h,T2=14.75h;FC3)",5.2416667,293.0,262.0,34.336604,171.68302,4.05,0.0,at_start,0.0,at_start,1.7166667,observed
+Tr14,WT YFP-CFP (Tr=14h),10.9916667,280.0,262.0,9.308661,46.543304,9.4916667,6.7166667,observed,7.7166667,observed,9.5083333,observed
+Tr37,WT YFP-CFP (Tr=37h),19.2416667,281.0,262.0,3.811655,19.058274,15.7583333,15.7333333,observed,16.1416667,observed,17.2666667,observed

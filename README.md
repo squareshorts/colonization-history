@@ -18,11 +18,14 @@ Python 3.10 or later is required. From the repository root:
 ```sh
 python -m pip install -r paper/requirements.txt
 python -m unittest discover -s paper/tests -p 'test_*.py' -v
+python paper/analysis/observed_establishment.py --repo . --out paper/results/observed_establishment.csv --sensitivity paper/results/observed_establishment_sensitivity.csv
+python paper/analysis/endpoint_observation_comparison.py --repo . --records paper/results/endpoint_observation_comparison.csv --summary paper/results/endpoint_observation_summary.json --sensitivity paper/results/absolute_threshold_sensitivity.csv
+python paper/analysis/make_endpoint_comparison_figure.py --csv paper/results/endpoint_observation_comparison.csv --out paper/figures/endpoint_comparison.pdf
 python paper/analysis/shared_calibration.py --repo . --out paper/results
 python paper/analysis/make_lag_figure.py --summary paper/results/shared_calibration.csv --output paper/figures/matched_flowcell_lags.pdf
 ```
 
-The tests check the analytic bounds, saved Monte Carlo results, smoothing edge behavior, the three paired comparisons and FC3 inclusion. Computational runs with alternative seeds and larger replication counts are described in [`paper/README.md`](paper/README.md). The article and electronic supplement are maintained outside the GitHub repository.
+The tests check the analytic bounds, saved Monte Carlo results, smoothing edge behavior, the matched comparisons, FC3 inclusion, and censoring-aware common occupancy thresholds. Relative and common-area endpoints are retrospective measures that also reflect initial cell delivery. Computational runs with alternative seeds and larger replication counts are described in [`paper/README.md`](paper/README.md). The article and electronic supplement are maintained outside the GitHub repository.
 
 ## Data provenance
 
@@ -30,7 +33,7 @@ The primary binary microscopy images are available at [Figshare DOI 10.6084/m9.f
 
 ## Code version and citation
 
-The current source version is **1.2.0**. The exact, immutable Git commit for this code is referenced in the corresponding article's Data accessibility statement. `CITATION.cff` describes this software version without attaching the DOI of a different release.
+The current source version is **1.2.1**. The exact, immutable Git commit for this code is referenced in the corresponding article's Data accessibility statement. `CITATION.cff` describes this software version without attaching the DOI of a different release.
 
 The existing [Zenodo DOI 10.5281/zenodo.23990601](https://doi.org/10.5281/zenodo.23990601) is for the **earlier v1.1.0** release. It does not archive the current results. A new archival DOI has not been minted.
 

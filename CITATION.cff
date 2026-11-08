@@ -1,4 +1,4 @@
-cff-version: 1.2.0
+cff-version: 1.2.1
 message: "Please cite this source version by its exact Git commit. The earlier Zenodo DOI applies only to the v1.1.0 release."
 title: "Discriminating cellular memory from population selection in bacterial colonization history: computational source"
 version: 1.2.0
