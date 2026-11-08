@@ -1,0 +1,28 @@
+{
+  "baseline_mean_probabilities": [
+    {
+      "law": "logistic_exponential",
+      "mean_sham_p": 0.09443261036368705,
+      "mean_pulse_mother_p": 0.19514708121837185,
+      "mean_pulse_daughter_p": 0.15927438472747357,
+      "daughter_sham_loss_limit_at_pulse_10pct": 0.05401512515891695,
+      "mother_sham_loss_limit_at_pulse_10pct": 0.0896672778438482,
+      "daughter_sham_loss_limit_at_pulse_0pct": 0.07160347767141634
+    },
+    {
+      "law": "cloglog_weibull",
+      "mean_sham_p": 0.11276488475123422,
+      "mean_pulse_mother_p": 0.23882384396396333,
+      "mean_pulse_daughter_p": 0.19319397661021254,
+      "daughter_sham_loss_limit_at_pulse_10pct": 0.06887655047424823,
+      "mother_sham_loss_limit_at_pulse_10pct": 0.11516290672026004,
+      "daughter_sham_loss_limit_at_pulse_0pct": 0.09065138482084013
+    }
+  ],
+  "studies_per_fine_design": 1600,
+  "fine_designs": 96,
+  "calibrated_designs": 28,
+  "calibrated_studies_per_design": 2800,
+  "scope": "Synthetic illustrative parameters, not biological power predictions",
+  "limitation": "An external p_max on Bernoulli success probabilities is a stochastic constraint, not an individual realized-outcome bound; required conditional independence and valid calibration"
+}
