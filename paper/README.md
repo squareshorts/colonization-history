@@ -21,3 +21,7 @@ python paper/analysis/calibration_stress.py
 ```
 
 `FIGURE_AND_RESULT_MAP.md` maps every main and supplementary figure and the central numerical claims to the exact scripts and tables. The earlier exploratory analyses remain archived under `archive/previous_extensions/`, and the main article LaTeX sources are supplied privately as an Overleaf ZIP. The README and CITATION metadata identify the current source revision separately from the earlier archived DOI.
+
+## Directly observed surface-occupancy expansion
+
+The current manuscript's main empirical endpoint is time to a sustained fivefold increase in recorded occupied area, measured within the archived flow-cell time series. The 26.75-hour FC1 series-2 recording reaches the threshold and contributes to the three paired comparisons without extrapolating its narrowly supported exponential lag. Recompute with `python paper/analysis/observed_establishment.py --repo . --out paper/results/observed_establishment.csv --sensitivity paper/results/observed_establishment_sensitivity.csv`. The fitted exponential lags remain secondary sensitivity results. The observed threshold combines initial surface delivery with later attachment and population expansion; it is a retrospective operational endpoint, not a biological memory marker.
