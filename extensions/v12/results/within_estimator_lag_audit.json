@@ -1,0 +1,59 @@
+{
+  "unit": "independent flowcell records",
+  "FC1_lag_h": [
+    11.91,
+    19.43,
+    15.17
+  ],
+  "FC2_lag_h": [
+    2.18,
+    12.09,
+    1.26
+  ],
+  "paired_FC2_minus_FC1_h": [
+    -9.73,
+    -7.34,
+    -13.91
+  ],
+  "paired_mean_h": -10.326666666666666,
+  "descriptive_paired_t_95ci_h": [
+    -18.5873988555405,
+    -2.0659344777928332
+  ],
+  "same_estimator_naive_mean_h": 15.503333333333332,
+  "same_estimator_immediate_mean_h": 5.176666666666667,
+  "same_estimator_14h_single_record_h": 3.71,
+  "same_estimator_37h_single_record_h": 12.59,
+  "descriptive_advantage0_h": 10.326666666666664,
+  "same_estimator_normalized_advantage": {
+    "14h": 1.1420271142672693,
+    "37h": 0.28211749515816653
+  },
+  "14h_exceeds_immediate": "the descriptive advantage after 14h exceeds the immediate-transfer mean, so these summaries do not follow monotone washout",
+  "technical_window_adversarial_paired_difference_h": [
+    -1.3899999999999997,
+    -4.790000000000001,
+    -4.96
+  ],
+  "technical_minima_coincidence": {
+    "FC1-1": {
+      "lag_h": 4.9740542653368465,
+      "smoothing_obs": 40,
+      "fit_cell_eq": [
+        40,
+        400
+      ]
+    },
+    "FC2-2": {
+      "lag_h": 4.972462526416053,
+      "smoothing_obs": 20,
+      "fit_cell_eq": [
+        10,
+        250
+      ]
+    },
+    "interpretation": "Different records and different windows, rounded to the same 4.97h; independently recalculated from archived counts and meta files"
+  },
+  "biological_interval_for_holding_time_response": "not identifiable from one recording per hold",
+  "source_reprocessing": "empirical/extract.py on original Lee et al. binary images, derived counts.csv/metadata released by this research project; not precomputed counts supplied by the original authors"
+}
