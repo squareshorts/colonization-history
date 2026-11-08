@@ -1,0 +1,80 @@
+{
+  "corrected_per_record": {
+    "paired_FC2_minus_FC1_h": [
+      -9.89954050227809,
+      -8.115813647830096,
+      -14.05692604356535
+    ],
+    "paired_mean_h": -10.690760064557844,
+    "descriptive_t95ci_h": [
+      -18.263805920827494,
+      -3.117714208288196
+    ],
+    "naive_mean_h": 15.889296114133508,
+    "immediate_mean_h": 5.198536049575663,
+    "lag_14h_single_record_h": 3.8546664602597733,
+    "lag_37h_single_record_h": 12.690883265182077,
+    "advantage_ratio_14h": 1.1257038396896686,
+    "advantage_ratio_37h": 0.2991754402528267,
+    "FC3_single_series_3_lag_h": 0.9444749000276417
+  },
+  "corrected_shared": {
+    "paired_FC2_minus_FC1_h": [
+      -10.199272058536609,
+      -10.483296901243122,
+      -14.311879316434624
+    ],
+    "paired_mean_h": -11.664816092071453,
+    "descriptive_t95ci_h": [
+      -17.370429594290734,
+      -5.959202589852172
+    ],
+    "naive_mean_h": 16.070469354974403,
+    "immediate_mean_h": 4.405653262902952,
+    "lag_14h_single_record_h": 3.9156977379092393,
+    "lag_37h_single_record_h": 12.734060172168723,
+    "advantage_ratio_14h": 1.0420028503772756,
+    "advantage_ratio_37h": 0.28602329916486463,
+    "FC3_single_series_3_lag_h": 0.9359044992037526,
+    "method": "Boundary-weight-normalized 20-sample moving average; common cell-area reference 262 pixels",
+    "shared_area_reference_px": 262,
+    "FC1_reference_px": [
+      240.5,
+      262,
+      305.5
+    ],
+    "shared_technical_worst_FC2_minus_FC1_h": [
+      -2.7039342896362526,
+      -7.344604857350525,
+      -7.786843183977821
+    ],
+    "per_record_summary": {
+      "paired_FC2_minus_FC1_h": [
+        -9.89954050227809,
+        -8.115813647830096,
+        -14.05692604356535
+      ],
+      "paired_mean_h": -10.690760064557844,
+      "descriptive_t95ci_h": [
+        -18.263805920827494,
+        -3.117714208288196
+      ],
+      "naive_mean_h": 15.889296114133508,
+      "immediate_mean_h": 5.198536049575663,
+      "lag_14h_single_record_h": 3.8546664602597733,
+      "lag_37h_single_record_h": 12.690883265182077,
+      "advantage_ratio_14h": 1.1257038396896686,
+      "advantage_ratio_37h": 0.2991754402528267,
+      "FC3_single_series_3_lag_h": 0.9444749000276417
+    },
+    "no_independent_hold_replicates": true,
+    "FC1_series2_growth_fit_limited_to_roughly_20_to_33_cell_equivalents": true,
+    "source": "derived counts.csv and meta.json in public GitHub empirical/observables; recomputed from source through GitHub connector 2026-11-08"
+  },
+  "per_record_worst_technical_differences": [
+    -2.793319998443833,
+    -6.884209709982768,
+    -6.027111152487853
+  ],
+  "FC3_archival_record": "WT YFP-CFP (T1=32.5h,T2=14.75h;FC3)"
+}

@@ -17,7 +17,7 @@ PUBLISHED_LAG_H = {"FC1": 17.56, "FC2": 4.68, "Tr14": 5.46, "Tr37": 13.41}
 def lag(dataset):
     t, c, m = A.occupancy(dataset)
     k = 20
-    cs = np.convolve(c, np.ones(k) / k, mode="same")
+    cs = np.convolve(c, np.ones(k), mode="same") / np.convolve(np.ones_like(c), np.ones(k), mode="same")
     base = max(float(np.median(cs[:240])), 1.0)
     sel = (cs >= 20) & (cs <= 300)
     if sel.sum() < 20 or t[-1] < 3:

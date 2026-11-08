@@ -1,30 +1,26 @@
 cff-version: 1.2.0
-message: "If you use this software or data, please cite it using the metadata below."
-title: "Colonization history: stochastic model, mechanism recovery and re-analysis of tandem flow-cell experiments"
-version: 1.1.0
-doi: 10.5281/zenodo.23990601
-date-released: 2026-11-05
+message: "Please cite this source version by its exact Git commit. The earlier Zenodo DOI applies only to the v1.1.0 release."
+title: "Discriminating cellular memory from population selection in bacterial colonization history: computational source"
+version: 1.2.0
 license: MIT
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.23990601
-    description: "Zenodo archive of release v1.1.0"
 repository-code: "https://github.com/squareshorts/colonization-history"
 authors:
   - family-names: Pereira
     given-names: Antonio
     orcid: "https://orcid.org/0000-0002-0808-1058"
-    affiliation: "Universidade Federal do Pará"
+    affiliation: "Universidade Federal do Para"
     email: apereira@ufpa.br
 keywords:
-  - biofilm
-  - surface sensing
-  - bacterial memory
-  - stochastic model
+  - bacterial colonization
+  - cellular history
+  - population selection
   - identifiability
+  - selective attrition
   - experimental design
-  - Pseudomonas aeruginosa
 references:
+  - type: software
+    title: "Colonization history: earlier stochastic-model archive, version 1.1.0"
+    doi: 10.5281/zenodo.23990601
   - type: dataset
     title: "Data for Multigenerational memory and adaptive adhesion in early bacterial biofilm communities"
     doi: 10.6084/m9.figshare.5969335
