@@ -1,0 +1,623 @@
+{
+  "seed": 20261107,
+  "n_studies_per_cell": 1000,
+  "attrition_designs": 96,
+  "kinetics": [
+    "logistic_exponential",
+    "cloglog_weibull"
+  ],
+  "null_max_bounded_joint_false": 0.003,
+  "positive_under_loss": [
+    {
+      "mode": "uniform",
+      "kinetic": "logistic_exponential",
+      "effect": 0.45,
+      "records": [
+        {
+          "requested_loss": 0.0,
+          "actual_loss_mean": 0.0,
+          "raw_joint": 0.718,
+          "manski_joint": 0.718,
+          "lee_joint": 0.718
+        },
+        {
+          "requested_loss": 0.05,
+          "actual_loss_mean": 0.05004,
+          "raw_joint": 0.692,
+          "manski_joint": 0.513,
+          "lee_joint": 0.516
+        },
+        {
+          "requested_loss": 0.1,
+          "actual_loss_mean": 0.09992,
+          "raw_joint": 0.659,
+          "manski_joint": 0.299,
+          "lee_joint": 0.295
+        },
+        {
+          "requested_loss": 0.2,
+          "actual_loss_mean": 0.19994,
+          "raw_joint": 0.666,
+          "manski_joint": 0.051,
+          "lee_joint": 0.044
+        },
+        {
+          "requested_loss": 0.3,
+          "actual_loss_mean": 0.3003,
+          "raw_joint": 0.602,
+          "manski_joint": 0.0,
+          "lee_joint": 0.0
+        },
+        {
+          "requested_loss": 0.4,
+          "actual_loss_mean": 0.4003,
+          "raw_joint": 0.58,
+          "manski_joint": 0.0,
+          "lee_joint": 0.0
+        }
+      ]
+    },
+    {
+      "mode": "uniform",
+      "kinetic": "logistic_exponential",
+      "effect": 0.85,
+      "records": [
+        {
+          "requested_loss": 0.0,
+          "actual_loss_mean": 0.0,
+          "raw_joint": 0.996,
+          "manski_joint": 0.996,
+          "lee_joint": 0.996
+        },
+        {
+          "requested_loss": 0.05,
+          "actual_loss_mean": 0.04991,
+          "raw_joint": 0.99,
+          "manski_joint": 0.985,
+          "lee_joint": 0.984
+        },
+        {
+          "requested_loss": 0.1,
+          "actual_loss_mean": 0.09989,
+          "raw_joint": 0.995,
+          "manski_joint": 0.97,
+          "lee_joint": 0.967
+        },
+        {
+          "requested_loss": 0.2,
+          "actual_loss_mean": 0.2,
+          "raw_joint": 0.988,
+          "manski_joint": 0.785,
+          "lee_joint": 0.774
+        },
+        {
+          "requested_loss": 0.3,
+          "actual_loss_mean": 0.30004,
+          "raw_joint": 0.993,
+          "manski_joint": 0.336,
+          "lee_joint": 0.308
+        },
+        {
+          "requested_loss": 0.4,
+          "actual_loss_mean": 0.39994,
+          "raw_joint": 0.981,
+          "manski_joint": 0.03,
+          "lee_joint": 0.025
+        }
+      ]
+    },
+    {
+      "mode": "uniform",
+      "kinetic": "logistic_exponential",
+      "effect": 1.3,
+      "records": [
+        {
+          "requested_loss": 0.0,
+          "actual_loss_mean": 0.0,
+          "raw_joint": 1.0,
+          "manski_joint": 1.0,
+          "lee_joint": 1.0
+        },
+        {
+          "requested_loss": 0.05,
+          "actual_loss_mean": 0.05022,
+          "raw_joint": 1.0,
+          "manski_joint": 1.0,
+          "lee_joint": 1.0
+        },
+        {
+          "requested_loss": 0.1,
+          "actual_loss_mean": 0.09983,
+          "raw_joint": 1.0,
+          "manski_joint": 1.0,
+          "lee_joint": 1.0
+        },
+        {
+          "requested_loss": 0.2,
+          "actual_loss_mean": 0.19985,
+          "raw_joint": 1.0,
+          "manski_joint": 0.999,
+          "lee_joint": 1.0
+        },
+        {
+          "requested_loss": 0.3,
+          "actual_loss_mean": 0.30084,
+          "raw_joint": 1.0,
+          "manski_joint": 0.98,
+          "lee_joint": 0.973
+        },
+        {
+          "requested_loss": 0.4,
+          "actual_loss_mean": 0.39989,
+          "raw_joint": 1.0,
+          "manski_joint": 0.708,
+          "lee_joint": 0.666
+        }
+      ]
+    },
+    {
+      "mode": "uniform",
+      "kinetic": "cloglog_weibull",
+      "effect": 0.45,
+      "records": [
+        {
+          "requested_loss": 0.0,
+          "actual_loss_mean": 0.0,
+          "raw_joint": 0.83,
+          "manski_joint": 0.83,
+          "lee_joint": 0.83
+        },
+        {
+          "requested_loss": 0.05,
+          "actual_loss_mean": 0.04997,
+          "raw_joint": 0.777,
+          "manski_joint": 0.647,
+          "lee_joint": 0.642
+        },
+        {
+          "requested_loss": 0.1,
+          "actual_loss_mean": 0.09936,
+          "raw_joint": 0.742,
+          "manski_joint": 0.409,
+          "lee_joint": 0.399
+        },
+        {
+          "requested_loss": 0.2,
+          "actual_loss_mean": 0.20029,
+          "raw_joint": 0.741,
+          "manski_joint": 0.061,
+          "lee_joint": 0.055
+        },
+        {
+          "requested_loss": 0.3,
+          "actual_loss_mean": 0.29929,
+          "raw_joint": 0.722,
+          "manski_joint": 0.003,
+          "lee_joint": 0.002
+        },
+        {
+          "requested_loss": 0.4,
+          "actual_loss_mean": 0.40022,
+          "raw_joint": 0.662,
+          "manski_joint": 0.0,
+          "lee_joint": 0.0
+        }
+      ]
+    },
+    {
+      "mode": "uniform",
+      "kinetic": "cloglog_weibull",
+      "effect": 0.85,
+      "records": [
+        {
+          "requested_loss": 0.0,
+          "actual_loss_mean": 0.0,
+          "raw_joint": 0.997,
+          "manski_joint": 0.997,
+          "lee_joint": 0.997
+        },
+        {
+          "requested_loss": 0.05,
+          "actual_loss_mean": 0.0498,
+          "raw_joint": 0.999,
+          "manski_joint": 0.989,
+          "lee_joint": 0.989
+        },
+        {
+          "requested_loss": 0.1,
+          "actual_loss_mean": 0.10045,
+          "raw_joint": 0.997,
+          "manski_joint": 0.982,
+          "lee_joint": 0.982
+        },
+        {
+          "requested_loss": 0.2,
+          "actual_loss_mean": 0.19946,
+          "raw_joint": 0.999,
+          "manski_joint": 0.898,
+          "lee_joint": 0.889
+        },
+        {
+          "requested_loss": 0.3,
+          "actual_loss_mean": 0.30014,
+          "raw_joint": 0.986,
+          "manski_joint": 0.491,
+          "lee_joint": 0.454
+        },
+        {
+          "requested_loss": 0.4,
+          "actual_loss_mean": 0.40016,
+          "raw_joint": 0.987,
+          "manski_joint": 0.037,
+          "lee_joint": 0.028
+        }
+      ]
+    },
+    {
+      "mode": "uniform",
+      "kinetic": "cloglog_weibull",
+      "effect": 1.3,
+      "records": [
+        {
+          "requested_loss": 0.0,
+          "actual_loss_mean": 0.0,
+          "raw_joint": 1.0,
+          "manski_joint": 1.0,
+          "lee_joint": 1.0
+        },
+        {
+          "requested_loss": 0.05,
+          "actual_loss_mean": 0.05023,
+          "raw_joint": 1.0,
+          "manski_joint": 1.0,
+          "lee_joint": 1.0
+        },
+        {
+          "requested_loss": 0.1,
+          "actual_loss_mean": 0.10027,
+          "raw_joint": 1.0,
+          "manski_joint": 1.0,
+          "lee_joint": 1.0
+        },
+        {
+          "requested_loss": 0.2,
+          "actual_loss_mean": 0.19971,
+          "raw_joint": 1.0,
+          "manski_joint": 1.0,
+          "lee_joint": 1.0
+        },
+        {
+          "requested_loss": 0.3,
+          "actual_loss_mean": 0.30033,
+          "raw_joint": 1.0,
+          "manski_joint": 0.986,
+          "lee_joint": 0.985
+        },
+        {
+          "requested_loss": 0.4,
+          "actual_loss_mean": 0.39977,
+          "raw_joint": 1.0,
+          "manski_joint": 0.854,
+          "lee_joint": 0.804
+        }
+      ]
+    },
+    {
+      "mode": "phenotype_biased",
+      "kinetic": "logistic_exponential",
+      "effect": 0.45,
+      "records": [
+        {
+          "requested_loss": 0.0,
+          "actual_loss_mean": 0.0,
+          "raw_joint": 0.724,
+          "manski_joint": 0.724,
+          "lee_joint": 0.724
+        },
+        {
+          "requested_loss": 0.05,
+          "actual_loss_mean": 0.03622,
+          "raw_joint": 0.738,
+          "manski_joint": 0.635,
+          "lee_joint": 0.627
+        },
+        {
+          "requested_loss": 0.1,
+          "actual_loss_mean": 0.07201,
+          "raw_joint": 0.75,
+          "manski_joint": 0.514,
+          "lee_joint": 0.508
+        },
+        {
+          "requested_loss": 0.2,
+          "actual_loss_mean": 0.14498,
+          "raw_joint": 0.785,
+          "manski_joint": 0.311,
+          "lee_joint": 0.298
+        },
+        {
+          "requested_loss": 0.3,
+          "actual_loss_mean": 0.21235,
+          "raw_joint": 0.832,
+          "manski_joint": 0.157,
+          "lee_joint": 0.142
+        },
+        {
+          "requested_loss": 0.4,
+          "actual_loss_mean": 0.28827,
+          "raw_joint": 0.846,
+          "manski_joint": 0.058,
+          "lee_joint": 0.05
+        }
+      ]
+    },
+    {
+      "mode": "phenotype_biased",
+      "kinetic": "logistic_exponential",
+      "effect": 0.85,
+      "records": [
+        {
+          "requested_loss": 0.0,
+          "actual_loss_mean": 0.0,
+          "raw_joint": 0.992,
+          "manski_joint": 0.992,
+          "lee_joint": 0.992
+        },
+        {
+          "requested_loss": 0.05,
+          "actual_loss_mean": 0.03553,
+          "raw_joint": 0.994,
+          "manski_joint": 0.988,
+          "lee_joint": 0.989
+        },
+        {
+          "requested_loss": 0.1,
+          "actual_loss_mean": 0.07194,
+          "raw_joint": 0.994,
+          "manski_joint": 0.986,
+          "lee_joint": 0.986
+        },
+        {
+          "requested_loss": 0.2,
+          "actual_loss_mean": 0.14254,
+          "raw_joint": 0.998,
+          "manski_joint": 0.961,
+          "lee_joint": 0.951
+        },
+        {
+          "requested_loss": 0.3,
+          "actual_loss_mean": 0.21471,
+          "raw_joint": 0.998,
+          "manski_joint": 0.878,
+          "lee_joint": 0.864
+        },
+        {
+          "requested_loss": 0.4,
+          "actual_loss_mean": 0.28646,
+          "raw_joint": 0.998,
+          "manski_joint": 0.72,
+          "lee_joint": 0.693
+        }
+      ]
+    },
+    {
+      "mode": "phenotype_biased",
+      "kinetic": "logistic_exponential",
+      "effect": 1.3,
+      "records": [
+        {
+          "requested_loss": 0.0,
+          "actual_loss_mean": 0.0,
+          "raw_joint": 1.0,
+          "manski_joint": 1.0,
+          "lee_joint": 1.0
+        },
+        {
+          "requested_loss": 0.05,
+          "actual_loss_mean": 0.03567,
+          "raw_joint": 1.0,
+          "manski_joint": 1.0,
+          "lee_joint": 1.0
+        },
+        {
+          "requested_loss": 0.1,
+          "actual_loss_mean": 0.07221,
+          "raw_joint": 1.0,
+          "manski_joint": 1.0,
+          "lee_joint": 1.0
+        },
+        {
+          "requested_loss": 0.2,
+          "actual_loss_mean": 0.14425,
+          "raw_joint": 1.0,
+          "manski_joint": 1.0,
+          "lee_joint": 1.0
+        },
+        {
+          "requested_loss": 0.3,
+          "actual_loss_mean": 0.21566,
+          "raw_joint": 1.0,
+          "manski_joint": 1.0,
+          "lee_joint": 1.0
+        },
+        {
+          "requested_loss": 0.4,
+          "actual_loss_mean": 0.28913,
+          "raw_joint": 1.0,
+          "manski_joint": 0.993,
+          "lee_joint": 0.991
+        }
+      ]
+    },
+    {
+      "mode": "phenotype_biased",
+      "kinetic": "cloglog_weibull",
+      "effect": 0.45,
+      "records": [
+        {
+          "requested_loss": 0.0,
+          "actual_loss_mean": 0.0,
+          "raw_joint": 0.802,
+          "manski_joint": 0.802,
+          "lee_joint": 0.802
+        },
+        {
+          "requested_loss": 0.05,
+          "actual_loss_mean": 0.03535,
+          "raw_joint": 0.829,
+          "manski_joint": 0.751,
+          "lee_joint": 0.75
+        },
+        {
+          "requested_loss": 0.1,
+          "actual_loss_mean": 0.07161,
+          "raw_joint": 0.834,
+          "manski_joint": 0.632,
+          "lee_joint": 0.629
+        },
+        {
+          "requested_loss": 0.2,
+          "actual_loss_mean": 0.1429,
+          "raw_joint": 0.866,
+          "manski_joint": 0.414,
+          "lee_joint": 0.405
+        },
+        {
+          "requested_loss": 0.3,
+          "actual_loss_mean": 0.21543,
+          "raw_joint": 0.875,
+          "manski_joint": 0.233,
+          "lee_joint": 0.218
+        },
+        {
+          "requested_loss": 0.4,
+          "actual_loss_mean": 0.2874,
+          "raw_joint": 0.899,
+          "manski_joint": 0.117,
+          "lee_joint": 0.11
+        }
+      ]
+    },
+    {
+      "mode": "phenotype_biased",
+      "kinetic": "cloglog_weibull",
+      "effect": 0.85,
+      "records": [
+        {
+          "requested_loss": 0.0,
+          "actual_loss_mean": 0.0,
+          "raw_joint": 1.0,
+          "manski_joint": 1.0,
+          "lee_joint": 1.0
+        },
+        {
+          "requested_loss": 0.05,
+          "actual_loss_mean": 0.03605,
+          "raw_joint": 0.996,
+          "manski_joint": 0.993,
+          "lee_joint": 0.993
+        },
+        {
+          "requested_loss": 0.1,
+          "actual_loss_mean": 0.07165,
+          "raw_joint": 0.999,
+          "manski_joint": 0.993,
+          "lee_joint": 0.993
+        },
+        {
+          "requested_loss": 0.2,
+          "actual_loss_mean": 0.14248,
+          "raw_joint": 0.998,
+          "manski_joint": 0.986,
+          "lee_joint": 0.983
+        },
+        {
+          "requested_loss": 0.3,
+          "actual_loss_mean": 0.21577,
+          "raw_joint": 0.999,
+          "manski_joint": 0.908,
+          "lee_joint": 0.901
+        },
+        {
+          "requested_loss": 0.4,
+          "actual_loss_mean": 0.2886,
+          "raw_joint": 0.998,
+          "manski_joint": 0.789,
+          "lee_joint": 0.769
+        }
+      ]
+    },
+    {
+      "mode": "phenotype_biased",
+      "kinetic": "cloglog_weibull",
+      "effect": 1.3,
+      "records": [
+        {
+          "requested_loss": 0.0,
+          "actual_loss_mean": 0.0,
+          "raw_joint": 1.0,
+          "manski_joint": 1.0,
+          "lee_joint": 1.0
+        },
+        {
+          "requested_loss": 0.05,
+          "actual_loss_mean": 0.03554,
+          "raw_joint": 1.0,
+          "manski_joint": 1.0,
+          "lee_joint": 1.0
+        },
+        {
+          "requested_loss": 0.1,
+          "actual_loss_mean": 0.07201,
+          "raw_joint": 1.0,
+          "manski_joint": 1.0,
+          "lee_joint": 1.0
+        },
+        {
+          "requested_loss": 0.2,
+          "actual_loss_mean": 0.14485,
+          "raw_joint": 1.0,
+          "manski_joint": 1.0,
+          "lee_joint": 1.0
+        },
+        {
+          "requested_loss": 0.3,
+          "actual_loss_mean": 0.21655,
+          "raw_joint": 1.0,
+          "manski_joint": 0.999,
+          "lee_joint": 0.999
+        },
+        {
+          "requested_loss": 0.4,
+          "actual_loss_mean": 0.28816,
+          "raw_joint": 1.0,
+          "manski_joint": 0.999,
+          "lee_joint": 0.999
+        }
+      ]
+    }
+  ],
+  "paired_contact": [
+    {
+      "hold_h": 0,
+      "high_phenotype_frequency": 0.9903590000000001,
+      "two_contact_KL_nats": 0.0001618405750763558,
+      "approx_n80": 19103.086176984663,
+      "n1000_oracle_power": 0.14066666666666666
+    },
+    {
+      "hold_h": 14,
+      "high_phenotype_frequency": 0.9303836041142818,
+      "two_contact_KL_nats": 0.006205946600262871,
+      "approx_n80": 497.982969589297,
+      "n1000_oracle_power": 0.97
+    },
+    {
+      "hold_h": 37,
+      "high_phenotype_frequency": 0.3190977588498649,
+      "two_contact_KL_nats": 0.059512731081279274,
+      "approx_n80": 51.19174987914839,
+      "n1000_oracle_power": 1.0
+    }
+  ]
+}
