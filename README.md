@@ -112,3 +112,7 @@ The `extensions/` directory provides additive, explicitly **model-conditional** 
 **Versioning.** This is new repository content since DOI 10.5281/zenodo.23990601 was minted. Do not assume the existing DOI archives the extensions. Source manuscript files remain private/outside this GitHub repository, as recorded in `.gitignore`.
 
 To run the additional tests: `cd extensions/v7 && python -m pytest tests -q`, `cd extensions/minimal_agents && python -m unittest discover -s tests -v`, and `cd extensions/identifiability && python -m unittest discover -p 'test_*.py' -v`.
+
+## Carrier discrimination: calibration and two-arm recovery
+
+The additive `extensions/v13/` analysis provides a fine 0-10% two-arm attrition sensitivity grid, a verified low-attachment-rate design constraint, a calibration-assisted missing-control sensitivity example (with invalid-assumption control), and an occupancy analysis using a shared single-cell reference from three FC1 controls. The assumed upper success probability for missing sham cells is a **conditional stochastic restriction**, never a deterministic bound on binary outcomes. Derived per-record occupancy records used by the shared-calibration script remain under `empirical/observables/`. No new Zenodo DOI was minted; the archived release predates this extension. The private manuscript source is excluded from the public repository.

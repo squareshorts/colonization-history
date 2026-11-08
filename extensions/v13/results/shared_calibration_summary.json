@@ -1,0 +1,17 @@
+{
+  "method": "Common cell-area unit from median of three FC1 references, using published derived counts",
+  "shared_area_reference_px": 262.0,
+  "FC1_reference_px": [240.5, 262.0, 305.5],
+  "paired_FC2_minus_FC1_h": [-10.029826851645199, -9.697449786013733, -14.177548714071333],
+  "paired_mean_h": -11.301608450576756,
+  "descriptive_t95ci_h": [-17.50245254385807, -5.100764357295445],
+  "naive_mean_h": 15.693309621697955,
+  "immediate_mean_h": 4.3917011711212,
+  "lag_14h_single_record_h": 3.7789921966081073,
+  "lag_37h_single_record_h": 12.63714218052201,
+  "advantage_ratio_14h": 1.0542143162358297,
+  "advantage_ratio_37h": 0.2704188040614678,
+  "shared_technical_worst_FC2_minus_FC1_h": [-1.0314639481554164, -5.285951357637158, -7.048978342205815],
+  "source": "Repository empirical/observables/*/{counts.csv,meta.json} downloaded through authenticated GitHub connector on 2026-11-07",
+  "original_image_segmentation_was_not_rerun": true
+}
