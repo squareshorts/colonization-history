@@ -117,15 +117,26 @@ def retention_summary(rows, rng, boot=2000):
     return est
 
 
-def paired_fields(repo):
-    """Five-minute retention per arrival in each matched sequence."""
+def field_interval(rows, rng, boot=2000):
+    """Bootstrap 95% interval for five-minute persistence within one field."""
+    f = np.array([x["frames"] for x in rows])
+    c = np.array([x["cens"] for x in rows])
+    bs = [km_visible_at(f[ii], c[ii]) for ii in (rng.integers(0, len(f), len(f)) for _ in range(boot))]
+    return [float(np.quantile(bs, .025)), float(np.quantile(bs, .975))]
+
+
+def paired_fields(repo, rng=None):
+    """Five-minute persistence per arrival in each matched sequence."""
+    rng = np.random.default_rng(20261116) if rng is None else rng
     rows, diffs = [], []
     for s, (a, b) in enumerate(MATCHED, 1):
         r0, r1 = load_dataset(repo, a), load_dataset(repo, b)
         p0 = km_visible_at([x["frames"] for x in r0], [x["cens"] for x in r0])
         p1 = km_visible_at([x["frames"] for x in r1], [x["cens"] for x in r1])
         rows.append({"series": s, "first_exposure": p0, "after_transfer": p1, "difference": p1 - p0,
-                     "arrivals_first_exposure": len(r0), "arrivals_after_transfer": len(r1)})
+                     "arrivals_first_exposure": len(r0), "arrivals_after_transfer": len(r1),
+                     "first_exposure_ci95_within_field": field_interval(r0, rng),
+                     "after_transfer_ci95_within_field": field_interval(r1, rng)})
         diffs.append(p1 - p0)
     d = np.array(diffs)
     half = student_t.ppf(.975, len(d) - 1) * d.std(ddof=1) / np.sqrt(len(d))

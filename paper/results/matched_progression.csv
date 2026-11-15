@@ -5,9 +5,9 @@ FC1-1,20,50,2.808333,observed,0.326276
 FC1-1,30,40,0.675,observed,0.426196
 FC1-1,40,50,0.35,observed,0.637553
 FC2-1,20,30,,lower_threshold_at_start,
-FC2-1,30,50,4.083333,observed,0.1251
+FC2-1,30,50,,lower_threshold_at_start,
 FC2-1,20,50,,lower_threshold_at_start,
-FC2-1,30,40,3.758333,observed,0.076545
+FC2-1,30,40,,lower_threshold_at_start,
 FC2-1,40,50,0.325,observed,0.686596
 FC1-2,20,30,0.941667,observed,0.430582
 FC1-2,30,50,0.316667,lower_bound,

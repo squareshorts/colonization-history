@@ -65,6 +65,7 @@ def main():
     for k, (ax, (title, recs)) in enumerate(zip(top, panels)):
         for q in (20, 30, 50):
             ax.axhline(q, color="#9a9890", lw=.6, ls=(0, (2, 2)), zorder=0)
+        ax.axhspan(FLOOR * .9, FLOOR * 1.12, color="#d9d8d3", alpha=.6, lw=0, zorder=0)
         for rec in recs:
             t, y = map(np.asarray, traj[rec])
             label, col = COND[cond_of(rec)]
@@ -82,6 +83,7 @@ def main():
     top[0].set_ylabel("Occupied area (cell equivalents)", fontsize=8)
     for q in (20, 30, 50):
         top[3].text(29.5, q * 1.04, f"{q}", fontsize=6.5, color="#6b6a64", ha="right", va="bottom")
+    top[0].set_yticks([FLOOR, 1, 10, 100], ["\u22640.3", "1", "10", "100"])
     cond_handles = [plt.Line2D([], [], color=COND[c][1], lw=2, label=COND[c][0])
                     for c in ("FC1", "FC2", "FC3", "Tr14", "Tr37")]
     fig.legend(handles=cond_handles, loc="upper center", ncol=5, frameon=False, fontsize=7.5,
@@ -91,13 +93,20 @@ def main():
     for k, (ax, key, title) in enumerate(zip(bottom[:2], ["relative5_h", "absolute30_h"],
                                              ["Fivefold increase\n(per recording)",
                                               "30 cell equivalents\n(common scale)"])):
+        status_key = key.replace("_h", "_status")
         for s in (1, 2, 3):
             y0, y1 = float(ends[f"FC1-{s}"][key]), float(ends[f"FC2-{s}"][key])
             ax.plot([0, 1], [y0, y1], color="#9a9890", lw=1.1, zorder=1)
-            ax.scatter([0], [y0], s=34, marker=SERIES_MARK[s], color=COND["FC1"][1], zorder=3,
-                       edgecolor="white", linewidth=.8)
-            ax.scatter([1], [y1], s=34, marker=SERIES_MARK[s], color=COND["FC2"][1], zorder=3,
-                       edgecolor="white", linewidth=.8)
+            for x, y, rec, c in ((0, y0, f"FC1-{s}", "FC1"), (1, y1, f"FC2-{s}", "FC2")):
+                censored = ends[rec].get(status_key, "observed") in ("at_start", "left_censored")
+                if censored:
+                    ax.scatter([x], [y], s=34, marker=SERIES_MARK[s], facecolor="white",
+                               edgecolor=COND[c][1], linewidth=1.2, zorder=3)
+                    ax.annotate("\u2264" + f"{y + 1e-9:.2f} h", (x, y), xytext=(-7, 1), textcoords="offset points",
+                                fontsize=6.5, color="#2b2a27", va="center", ha="right")
+                else:
+                    ax.scatter([x], [y], s=34, marker=SERIES_MARK[s], color=COND[c][1], zorder=3,
+                               edgecolor="white", linewidth=.8)
         ax.set_xticks([0, 1], ["First\nexposure", "After\ntransfer"], fontsize=8)
         ax.set_xlim(-.3, 1.3)
         ax.set_ylim(-1, 29)
@@ -109,26 +118,34 @@ def main():
     plt.setp(bottom[1].get_yticklabels(), visible=False)
     handles = [plt.Line2D([], [], marker=SERIES_MARK[s], ls="", color="#52514e", ms=5.5, label=f"Series {s}")
                for s in (1, 2, 3)]
-    bottom[1].legend(handles=handles, frameon=False, fontsize=7, loc="upper right", handletextpad=.2)
+    cens = plt.Line2D([], [], marker="o", ls="", mfc="white", mec="#52514e", ms=5.5, label="Left-censored")
+    bottom[0].legend(handles=handles + [cens], frameon=False, fontsize=6.8, loc="lower left",
+                     handletextpad=.2, borderaxespad=.1)
 
     ax = bottom[2]
-    order = ["FC1", "FC2", "FC3", "Tr14", "Tr37"]
-    for i, c in enumerate(order):
-        recs = [r for r in dyn if cond_of(r) == c]
-        for rec in recs:
-            v = float(dyn[rec]["occupancy_ratio_4_8h"])
-            s = int(rec.split("-")[1]) if "-" in rec else None
-            dx = {1: -.12, 2: 0., 3: .12}.get(s, 0.)
-            ax.scatter([i + dx], [v], s=34, marker=SERIES_MARK.get(s, "D"), color=COND[c][1],
-                       edgecolor="white", linewidth=.8, zorder=3)
+    for s in (1, 2, 3):
+        v0 = float(dyn[f"FC1-{s}"]["occupancy_ratio_4_8h"])
+        v1 = float(dyn[f"FC2-{s}"]["occupancy_ratio_4_8h"])
+        dx = {1: -.1, 2: 0., 3: .1}[s]
+        ax.plot([dx, 1 + dx], [v0, v1], color="#9a9890", lw=1.1, zorder=1)
+        ax.scatter([dx], [v0], s=34, marker=SERIES_MARK[s], color=COND["FC1"][1], edgecolor="white",
+                   linewidth=.8, zorder=3)
+        ax.scatter([1 + dx], [v1], s=34, marker=SERIES_MARK[s], color=COND["FC2"][1], edgecolor="white",
+                   linewidth=.8, zorder=3)
+    singles = [("FC3-3", "FC3", "^"), ("Tr14", "Tr14", "D"), ("Tr37", "Tr37", "D")]
+    for i, (rec, c, mk) in enumerate(singles):
+        ax.scatter([2.4 + i], [float(dyn[rec]["occupancy_ratio_4_8h"])], s=34, marker=mk, color=COND[c][1],
+                   edgecolor="white", linewidth=.8, zorder=3)
+    ax.axvline(1.7, color="#c9c8c2", lw=.8, zorder=0)
+    ax.text(.5, 6.6, "Paired series", ha="center", fontsize=7, color="#6b6a64")
+    ax.text(3.4, 6.6, "Single recordings", ha="center", fontsize=7, color="#6b6a64")
     ax.axhline(1, color="#9a9890", lw=.7, ls=(0, (2, 2)), zorder=0)
-    ax.set_xticks(range(len(order)), ["First\nexposure", "After\ntransfer", "Second\ntransfer",
-                                      "14-h\nhold", "37-h\nhold"], fontsize=7.5)
-    ax.set_xlim(-.5, len(order) - .5)
-    ax.set_ylim(-.3, 7)
+    ax.set_xticks([0, 1, 2.4, 3.4, 4.4], ["First\nexposure", "After\ntransfer", "Second\ntransfer",
+                                          "14-h\nhold", "37-h\nhold"], fontsize=7.2)
+    ax.set_xlim(-.45, 4.9)
+    ax.set_ylim(-.3, 7.2)
     ax.set_ylabel("Occupancy at 4–8 h / 0–2 h", fontsize=8)
     ax.set_title("Early occupancy ratio", fontsize=9, pad=4)
-    ax.legend(handles=handles, frameon=False, fontsize=7, loc="upper right", handletextpad=.2)
     style(ax)
     ax.text(-.04, 1.06, "g", transform=ax.transAxes, fontsize=10, fontweight="bold", ha="right")
 

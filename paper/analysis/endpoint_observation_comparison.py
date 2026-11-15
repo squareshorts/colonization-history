@@ -26,8 +26,13 @@ def absolute_sustained_time(times, area_px, reference_px, threshold,
 
     time=0 with status `at_start` means that the threshold was already
     attained in the first observation for the required persistence period;
-    it is left-censored as a new crossing time. `after_end` means that
-    the threshold was not maintained within the recorded interval.
+    it is left-censored as a new crossing time. `left_censored` means that
+    the first sustained crossing falls inside the first smoothing window
+    (fewer than `width` samples from the start), where the boundary-normalized
+    average uses only later samples and cannot separate a crossing from
+    occupancy present at the start; the reported time is an upper bound.
+    `after_end` means that the threshold was not maintained within the
+    recorded interval.
     """
     t, area = np.asarray(times, float), np.asarray(area_px, float)
     if len(t) < 2 or len(t) != len(area) or not np.all(np.diff(t) > 0):
@@ -44,7 +49,9 @@ def absolute_sustained_time(times, area_px, reference_px, threshold,
             continue
         j = np.searchsorted(t, end_time, side="left")
         if np.all(sm[i:j+1] >= threshold):
-            return (float(t[i]), "at_start" if i == 0 else "observed")
+            if i == 0:
+                return (float(t[i]), "at_start")
+            return (float(t[i]), "left_censored" if i < width else "observed")
     return (float("nan"), "after_end")
 
 
@@ -80,6 +87,8 @@ def summarize_from_records(records):
     by = {r["record"]: r for r in records}
     out = {}
     for key in ("relative5_h", "absolute20_h", "absolute30_h", "absolute50_h"):
+        if key not in records[0]:
+            continue
         paired = paired_differences(records,key)
         z={"paired":paired}
         if all(row["difference_h"] is not None for row in paired):

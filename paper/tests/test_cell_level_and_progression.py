@@ -142,3 +142,30 @@ class RepeatedContact(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class CensoringAndFigureScripts(unittest.TestCase):
+    def test_crossing_inside_first_smoothing_window_is_left_censored(self):
+        from endpoint_observation_comparison import absolute_sustained_time
+        t = np.arange(0, 3, 1 / 120)
+        area = np.where(np.arange(len(t)) < 15, 20., 60.) * 100.
+        time, status = absolute_sustained_time(t, area, 100., 30, width=20, persistence_minutes=15)
+        self.assertEqual(status, "left_censored")
+        self.assertLess(time, 20 / 120)
+
+    def test_saved_series1_transfer_crossing_is_left_censored(self):
+        rows = {r["record"]: r for r in read("endpoint_observation_comparison.csv")}
+        self.assertEqual(rows["FC2-1"]["absolute30_status"], "left_censored")
+        self.assertEqual(rows["FC2-2"]["absolute30_status"], "observed")
+
+    def test_equivalence_curves_coincide(self):
+        import make_equivalence_figure as mef
+        t = np.linspace(0, 60, 601)
+        self.assertLess(np.max(np.abs(mef.selection_lag(t) - mef.fading_response_lag(t, nu=3.))), 1e-9)
+        self.assertAlmostEqual(float(mef.selection_lag(np.array([0.]))[0]), 4.68, places=9)
+
+    def test_sample_size_labels(self):
+        import make_design_figures as mdf
+        self.assertEqual(mdf.fmt(392), "390")
+        self.assertEqual(mdf.fmt(15341), "15,000")
+        self.assertTrue(mdf.fmt(22633507).startswith("2.3"))

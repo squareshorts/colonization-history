@@ -66,7 +66,7 @@ def progression(row, lo, hi):
     """
     a, sa = row[f"t{lo}_h"], row[f"t{lo}_status"]
     b, sb = row[f"t{hi}_h"], row[f"t{hi}_status"]
-    if sa == "at_start":
+    if sa in ("at_start", "left_censored"):
         return None, "lower_threshold_at_start"
     if a is None:
         return None, "lower_threshold_not_reached"

@@ -133,7 +133,15 @@
         "after_transfer": 0.0800935965329805,
         "difference": 0.06670073939012336,
         "arrivals_first_exposure": 224,
-        "arrivals_after_transfer": 1684
+        "arrivals_after_transfer": 1684,
+        "first_exposure_ci95_within_field": [
+          0.0,
+          0.03125
+        ],
+        "after_transfer_ci95_within_field": [
+          0.0667342482739778,
+          0.09396227356040217
+        ]
       },
       {
         "series": 2,
@@ -141,7 +149,15 @@
         "after_transfer": 0.05022622032952297,
         "difference": 0.0007756708789735112,
         "arrivals_first_exposure": 182,
-        "arrivals_after_transfer": 1083
+        "arrivals_after_transfer": 1083,
+        "first_exposure_ci95_within_field": [
+          0.021978021978021976,
+          0.08241758241758243
+        ],
+        "after_transfer_ci95_within_field": [
+          0.0369984851482228,
+          0.06393143451534401
+        ]
       },
       {
         "series": 3,
@@ -149,7 +165,15 @@
         "after_transfer": 0.1242487248116346,
         "difference": 0.05652385708676688,
         "arrivals_first_exposure": 75,
-        "arrivals_after_transfer": 281
+        "arrivals_after_transfer": 281,
+        "first_exposure_ci95_within_field": [
+          0.013333333333333343,
+          0.13499999999999998
+        ],
+        "after_transfer_ci95_within_field": [
+          0.08610222613148999,
+          0.16224781827222087
+        ]
       }
     ],
     "mean_difference": 0.041333422451954586,

@@ -28,9 +28,9 @@
       {
         "series": 1,
         "fc1_h": 1.025,
-        "fc2_h": 4.083333,
-        "fc2_minus_fc1_h": 3.058333,
-        "status": "observed_pair"
+        "fc2_h": null,
+        "fc2_minus_fc1_h": null,
+        "status": "observed|lower_threshold_at_start"
       },
       {
         "series": 2,
@@ -76,9 +76,9 @@
       {
         "series": 1,
         "fc1_h": 0.675,
-        "fc2_h": 3.758333,
-        "fc2_minus_fc1_h": 3.083333,
-        "status": "observed_pair"
+        "fc2_h": null,
+        "fc2_minus_fc1_h": null,
+        "status": "observed|lower_threshold_at_start"
       },
       {
         "series": 2,
