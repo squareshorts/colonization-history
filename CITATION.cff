@@ -1,7 +1,8 @@
-cff-version: 1.2.1
+cff-version: 1.2.0
 message: "Please cite this source version by its exact Git commit. The earlier Zenodo DOI applies only to the v1.1.0 release."
 title: "Discriminating cellular memory from population selection in bacterial colonization history: computational source"
-version: 1.2.0
+version: 1.2.1
+date-released: 2026-11-15
 license: MIT
 repository-code: "https://github.com/squareshorts/colonization-history"
 authors:
@@ -21,7 +22,10 @@ references:
   - type: software
     title: "Colonization history: earlier stochastic-model archive, version 1.1.0"
     doi: 10.5281/zenodo.23990601
-  - type: dataset
+    authors:
+      - family-names: Pereira
+        given-names: Antonio
+  - type: data
     title: "Data for Multigenerational memory and adaptive adhesion in early bacterial biofilm communities"
     doi: 10.6084/m9.figshare.5969335
     authors:

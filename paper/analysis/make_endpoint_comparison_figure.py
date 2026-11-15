@@ -15,7 +15,7 @@ def main():
     with a.csv.open(newline='') as handle:
         rows={r['record']:r for r in csv.DictReader(handle)}
     fig,axs=plt.subplots(1,2,figsize=(7.2,3.65),sharey=True)
-    titles=['Within-record fivefold increase','Shared 30-cell-area threshold']
+    titles=['Recording-specific fivefold threshold','Common 30-cell-equivalent threshold']
     keys=['relative5_h','absolute30_h']
     line_handles=[]
     for ax,title,key in zip(axs,titles,keys):
