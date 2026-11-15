@@ -6,6 +6,11 @@ initial cell delivery with later surface expansion. The time spent between two
 common thresholds removes the delivery component: both populations are timed
 from the moment they first sustain the same occupied area.
 
+The early occupancy ratio compares occupied area at 4-8 h with the first 2 h;
+it measures persistence of surface occupancy and does not follow individual
+cells. The expansion rate is the net growth of occupied area, which combines
+division, arrival, departure and changes in projected area.
+
 The script also evaluates the positive-decay-mixture constraint
 r(37) >= r(14)^(37/14) (electronic supplementary material, section 1) under
 every observation rule reported in the article.
@@ -143,7 +148,7 @@ def decay_bound_rows(repo, results_dir):
     return rows
 
 
-def early_retention(t, sm, early=(0., 2.), window=(4., 8.)):
+def early_occupancy_ratio(t, sm, early=(0., 2.), window=(4., 8.)):
     """Median smoothed occupancy in `window` divided by its median in `early`."""
     e = sm[(t >= early[0]) & (t < early[1])]
     lo, hi = window[0], min(window[1], float(t[-1]))
@@ -177,7 +182,7 @@ def max_expansion_rate(t, sm, span_h=2., floor=5., start_h=2.):
 
 
 def dynamics_table(repo, width=20, windows=((4., 8.), (3., 6.), (6., 10.))):
-    """Early retention of delivered cells and maximal later expansion rate per record."""
+    """Early occupancy ratio and maximal net occupancy expansion rate per record."""
     ref = shared_reference(repo)
     out = []
     for rid, name in DATASETS:
@@ -186,8 +191,8 @@ def dynamics_table(repo, width=20, windows=((4., 8.), (3., 6.), (6., 10.))):
         row = {"record": rid, "record_end_h": round(float(t[-1]), 4),
                "early_median_cell_eq": round(float(np.median(sm[t < 2.])), 4)}
         for w in windows:
-            r = early_retention(t, sm, window=w)
-            row[f"retention_{w[0]:g}_{w[1]:g}h"] = None if r is None else round(r, 4)
+            r = early_occupancy_ratio(t, sm, window=w)
+            row[f"occupancy_ratio_{w[0]:g}_{w[1]:g}h"] = None if r is None else round(r, 4)
         for span, floor in ((2., 5.), (3., 5.), (2., 10.)):
             rate, at = max_expansion_rate(t, sm, span_h=span, floor=floor)
             tag = f"{span:g}h_floor{floor:g}"

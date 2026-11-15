@@ -1,4 +1,4 @@
-record,record_end_h,early_median_cell_eq,retention_4_8h,retention_3_6h,retention_6_10h,max_rate_2h_floor5_per_h,max_rate_2h_floor5_start_h,max_rate_3h_floor5_per_h,max_rate_3h_floor5_start_h,max_rate_2h_floor10_per_h,max_rate_2h_floor10_start_h
+record,record_end_h,early_median_cell_eq,occupancy_ratio_4_8h,occupancy_ratio_3_6h,occupancy_ratio_6_10h,max_rate_2h_floor5_per_h,max_rate_2h_floor5_start_h,max_rate_3h_floor5_per_h,max_rate_3h_floor5_start_h,max_rate_2h_floor10_per_h,max_rate_2h_floor10_start_h
 FC1-1,29.4917,0.4514,0.0,0.1319,0.0,0.7415,21.5,0.5069,21.5,0.5162,24.5
 FC2-1,12.4917,35.2389,1.5502,1.555,1.6104,0.5012,7.833,0.4241,7.75,0.5012,7.833
 FC1-2,26.7417,3.0653,0.0,0.0,0.0,0.5192,23.5,0.4641,23.5,0.3973,24.667

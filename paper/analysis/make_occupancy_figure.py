@@ -1,4 +1,4 @@
-"""Main Figure 1: occupancy trajectories, threshold times and early retention.
+"""Main Figure 1: occupancy trajectories, threshold times and early occupancy ratio.
 
 Inputs are produced by matched_progression.py and
 endpoint_observation_comparison.py.
@@ -116,7 +116,7 @@ def main():
     for i, c in enumerate(order):
         recs = [r for r in dyn if cond_of(r) == c]
         for rec in recs:
-            v = float(dyn[rec]["retention_4_8h"])
+            v = float(dyn[rec]["occupancy_ratio_4_8h"])
             s = int(rec.split("-")[1]) if "-" in rec else None
             dx = {1: -.12, 2: 0., 3: .12}.get(s, 0.)
             ax.scatter([i + dx], [v], s=34, marker=SERIES_MARK.get(s, "D"), color=COND[c][1],
@@ -127,7 +127,7 @@ def main():
     ax.set_xlim(-.5, len(order) - .5)
     ax.set_ylim(-.3, 7)
     ax.set_ylabel("Occupancy at 4–8 h / 0–2 h", fontsize=8)
-    ax.set_title("Early retention of\ndelivered cells", fontsize=9, pad=4)
+    ax.set_title("Early occupancy ratio", fontsize=9, pad=4)
     ax.legend(handles=handles, frameon=False, fontsize=7, loc="upper right", handletextpad=.2)
     style(ax)
     ax.text(-.04, 1.06, "g", transform=ax.transAxes, fontsize=10, fontweight="bold", ha="right")

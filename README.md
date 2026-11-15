@@ -30,7 +30,7 @@ python paper/analysis/make_residence_figure.py --repo . --results paper/results 
 python paper/analysis/repeated_contact_design.py --out paper/results
 ```
 
-The tests check the analytic bounds, saved Monte Carlo results, smoothing edge behavior, the matched comparisons, FC3 inclusion, censoring-aware common occupancy thresholds, early retention and expansion rates, the interval-censored residence likelihood and its fits, and the multi-contact power calculations. `residence_composition.py` runs a 200-dataset parametric bootstrap and takes several minutes. Relative and common-area endpoints are retrospective measures that also reflect initial cell delivery. Computational runs with alternative seeds and larger replication counts are described in [`paper/README.md`](paper/README.md). The article and electronic supplement are maintained outside the GitHub repository.
+The tests check the analytic bounds, saved Monte Carlo results, smoothing edge behavior, the matched comparisons, FC3 inclusion, censoring-aware common occupancy thresholds, early occupancy ratios and net expansion rates, the interval-censored persistence likelihood, the composition and age-advance equivalence, and the multi-contact power calculations. `residence_composition.py` fits all mixture families and sensitivity analyses in about a minute. Relative and common-area endpoints are retrospective measures that also reflect initial cell delivery. Computational runs with alternative seeds and larger replication counts are described in [`paper/README.md`](paper/README.md). The article and electronic supplement are maintained outside the GitHub repository.
 
 ## Data provenance
 

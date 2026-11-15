@@ -12,7 +12,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 
-from residence_composition import FRAME_S, GROUPS, load_group
+from residence_composition import EXTRA_FC1, FRAME_S, GROUPS, load_group
 
 COL = {"FC1": "#52514e", "FC2": "#2a78d6", "FC3": "#1baf7a", "Tr14": "#eb6834", "Tr37": "#c98500"}
 LAB = {"FC1": "First exposure", "FC2": "After transfer", "FC3": "Second transfer",
@@ -47,7 +47,7 @@ def main():
     ap.add_argument("--out", type=Path, required=True)
     a = ap.parse_args()
     d = json.loads((a.results / "residence_composition.json").read_text())
-    fits = d["fits"]
+    fits = d["models"]["matched"]["3_types"]["fits"]
 
     fig, axs = plt.subplots(1, 2, figsize=(7.4, 3.1), gridspec_kw={"width_ratios": [1.25, 1], "wspace": .3})
     ax = axs[0]
@@ -56,23 +56,23 @@ def main():
     for g in ("FC1", "FC2"):
         rows = load_group(a.repo, GROUPS[g])
         ax.step(ages, km_curve(rows, frames), where="post", color=COL[g], lw=1.6, label=f"{LAB[g]} (tracks)")
-    rw, sh = fits["reweight_3"], fits["shift_3"]
+    rw, sh = fits["composition"], fits["rate_shift"]
     fine = np.geomspace(3, 3600, 300)
     for g, key in (("FC1", "weights_FC1"), ("FC2", "weights_FC2")):
         ax.plot(fine, model_curve(rw[key], rw["rates_per_s"], fine), color=COL[g], lw=1.0, ls=(0, (4, 2)))
         rates = np.array(sh["rates_per_s"]) * (np.exp(-sh["delta"]) if g == "FC2" else 1.)
         ax.plot(fine, model_curve(sh[key], rates, fine), color=COL[g], lw=1.0, ls=(0, (1, 1.5)))
-    ax.plot([], [], color="#6b6a64", lw=1.0, ls=(0, (4, 2)), label="Composition change (fit)")
-    ax.plot([], [], color="#6b6a64", lw=1.0, ls=(0, (1, 1.5)), label="Graded shift (fit)")
+    ax.plot([], [], color="#6b6a64", lw=1.0, ls=(0, (4, 2)), label="Composition change or age advance (fit)")
+    ax.plot([], [], color="#6b6a64", lw=1.0, ls=(0, (1, 1.5)), label="Rate shift (fit)")
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_xlim(3, 3600)
     ax.set_ylim(.02, 1.05)
     ax.axvline(300, color="#9a9890", lw=.6, ls=(0, (2, 2)), zorder=0)
     ax.set_xlabel("Time since attachment (s)", fontsize=8)
-    ax.set_ylabel("Fraction still attached", fontsize=8)
+    ax.set_ylabel("Fraction of tracks persisting", fontsize=8)
     ax.legend(frameon=False, fontsize=6.8, loc="lower left")
-    ax.set_title("Residence after attachment, first 3 h", fontsize=9, pad=4)
+    ax.set_title("Persistence after attachment, matched fields", fontsize=9, pad=4)
     ax.text(-.06, 1.05, "a", transform=ax.transAxes, fontsize=10, fontweight="bold", ha="right")
 
     ax = axs[1]
@@ -80,19 +80,22 @@ def main():
     for i, g in enumerate(order):
         r = d["retention"][g]
         est = r["retained_300s_per_arrival"]
-        lo, hi = r["retained_300s_per_arrival_ci95"]
+        lo, hi = r["retained_300s_per_arrival_ci95_within_fields"]
         ax.errorbar([i], [est], yerr=[[est - lo], [hi - est]], fmt="o", ms=5.5, color=COL[g],
                     ecolor=COL[g], elinewidth=1.2, capsize=0, zorder=3)
         if len(r["per_field_retained_300s"]) > 1:
             pf = list(r["per_field_retained_300s"].values())
             ax.scatter(np.full(len(pf), i + .22), pf, s=12, facecolor="white", edgecolor=COL[g],
                        linewidth=.9, zorder=2)
+        if g == "FC1":
+            extra = d["retention"]["FC1_with_first_hour_recording"]["per_field_retained_300s"][EXTRA_FC1]
+            ax.scatter([i + .22], [extra], s=16, marker="x", color=COL[g], linewidth=.9, zorder=2)
     ax.set_xticks(range(len(order)), ["First\nexposure", "After\ntransfer", "Second\ntransfer",
                                       "14-h\nhold", "37-h\nhold"], fontsize=6.6)
     ax.set_xlim(-.5, len(order) - .4)
     ax.set_ylim(0, .17)
-    ax.set_ylabel("Retained 5 min after arrival", fontsize=8)
-    ax.set_title("Five-minute retention per arrival", fontsize=9, pad=4)
+    ax.set_ylabel("Persisting 5 min after arrival", fontsize=8)
+    ax.set_title("Five-minute persistence per arrival", fontsize=9, pad=4)
     ax.text(-.06, 1.05, "b", transform=ax.transAxes, fontsize=10, fontweight="bold", ha="right")
     for x in axs:
         x.spines[["top", "right"]].set_visible(False)
