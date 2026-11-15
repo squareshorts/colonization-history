@@ -23,9 +23,14 @@ python paper/analysis/endpoint_observation_comparison.py --repo . --records pape
 python paper/analysis/make_endpoint_comparison_figure.py --csv paper/results/endpoint_observation_comparison.csv --out paper/figures/endpoint_comparison.pdf
 python paper/analysis/shared_calibration.py --repo . --out paper/results
 python paper/analysis/make_lag_figure.py --summary paper/results/shared_calibration.csv --output paper/figures/matched_flowcell_lags.pdf
+python paper/analysis/matched_progression.py --repo . --out paper/results
+python paper/analysis/make_occupancy_figure.py --results paper/results --out paper/figures/occupancy_endpoints.pdf
+python paper/analysis/residence_composition.py --repo . --out paper/results
+python paper/analysis/make_residence_figure.py --repo . --results paper/results --out paper/figures/residence_composition.pdf
+python paper/analysis/repeated_contact_design.py --out paper/results
 ```
 
-The tests check the analytic bounds, saved Monte Carlo results, smoothing edge behavior, the matched comparisons, FC3 inclusion, and censoring-aware common occupancy thresholds. Relative and common-area endpoints are retrospective measures that also reflect initial cell delivery. Computational runs with alternative seeds and larger replication counts are described in [`paper/README.md`](paper/README.md). The article and electronic supplement are maintained outside the GitHub repository.
+The tests check the analytic bounds, saved Monte Carlo results, smoothing edge behavior, the matched comparisons, FC3 inclusion, censoring-aware common occupancy thresholds, early retention and expansion rates, the interval-censored residence likelihood and its fits, and the multi-contact power calculations. `residence_composition.py` runs a 200-dataset parametric bootstrap and takes several minutes. Relative and common-area endpoints are retrospective measures that also reflect initial cell delivery. Computational runs with alternative seeds and larger replication counts are described in [`paper/README.md`](paper/README.md). The article and electronic supplement are maintained outside the GitHub repository.
 
 ## Data provenance
 
@@ -33,7 +38,7 @@ The primary binary microscopy images are available at [Figshare DOI 10.6084/m9.f
 
 ## Code version and citation
 
-The current source version is **1.2.1**. The exact, immutable Git commit for this code is referenced in the corresponding article's Data accessibility statement. `CITATION.cff` describes this software version without attaching the DOI of a different release.
+The current source version is **1.3.0**. The exact, immutable Git commit for this code is referenced in the corresponding article's Data accessibility statement. `CITATION.cff` describes this software version without attaching the DOI of a different release.
 
 The existing [Zenodo DOI 10.5281/zenodo.23990601](https://doi.org/10.5281/zenodo.23990601) is for the **earlier v1.1.0** release. It does not archive the current results. A new archival DOI has not been minted.
 

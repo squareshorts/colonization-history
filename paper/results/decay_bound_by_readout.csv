@@ -1,0 +1,7 @@
+readout,r14,r37,mixture_lower_bound_r37,verdict
+Published fitted colonization lag,0.9394,0.3222,0.8478,violated
+Image-derived occupancy lag (record-specific area),1.1257,0.2992,,violated: advantage increases between 0 and 14 h
+Image-derived occupancy lag (common area),1.042,0.286,,violated: advantage increases between 0 and 14 h
+Recording-specific sustained fivefold occupancy,1.3047,0.7001,,violated: advantage increases between 0 and 14 h
+Common sustained 20-equivalent occupancy,0.8958,0.4342,0.7476,violated
+Common sustained 30-equivalent occupancy,0.9312,0.4836,0.8284,violated
