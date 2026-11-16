@@ -11,6 +11,18 @@ Distinct intracellular-state and differential-growth-selection models can produc
 - [`archive/previous_extensions/`](archive/previous_extensions/) preserves previous exploratory analyses, agent ablations and alternative numerical experiments. These materials remain traceable for research history and are not the primary evidence for the current article.
 - The original prototype simulator and its exploratory scripts remain in the repository history and at the root for backward compatibility.
 
+## Repeated-contact identifiability check
+
+`paper/analysis/repeated_contact_equivalence.py` verifies that a stable
+two-phenotype attachment mixture and its exact posterior-predictive,
+history-conditioned representation have identical ordered-outcome
+probabilities. This is an algebraic equivalence, not biological validation
+of contact-induced state change. Ordered three-contact outcomes also
+distinguish the mixture from a restricted first-order history rule.
+
+Run `python paper/analysis/repeated_contact_equivalence.py --out paper/results/repeated_contact_equivalence.csv`
+and `python -m unittest discover -s paper/tests -p 'test_*.py' -v`.
+
 ## Reproduce the reported results
 
 Python 3.10 or later is required. From the repository root:

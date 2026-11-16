@@ -2,6 +2,19 @@
 
 This directory contains the current article's numerical analysis and tests. Simulated attachment and recovery models are mathematical demonstrations and have not been calibrated to a bacterial population. The empirical observations are independent image-derived `counts.csv` and `meta.json` files created earlier from the Lee et al. (2018) Figshare binary microscopy stacks. They are retained in the public repository's `empirical/observables/` directories. The current edge-correction analysis does not repeat raw-image segmentation.
 
+## Repeated-contact sequence identifiability
+
+The exact mixture-versus-history equivalence and a three-contact
+counterexample are implemented in `analysis/repeated_contact_equivalence.py`.
+The history-conditioned rule is the posterior predictive of the stable
+mixture, not an independently validated physiological model. It reproduces
+all ordered binary outcome sequences, and the new unit tests check the
+result for 2, 5 and 10 contacts. Tabulated diagnostics are retained in
+`results/repeated_contact_equivalence.csv`. Existing Tarone/oracle sample
+sizes test dependence against independent common-probability attachment;
+they do not quantify power for distinguishing stable phenotypes from a
+general history-dependent process.
+
 ## Reproduction
 
 In a checkout of the public repository `squareshorts/colonization-history`, use Python 3.10+.

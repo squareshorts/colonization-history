@@ -1,8 +1,8 @@
 cff-version: 1.2.0
-message: "Please cite this source version by its exact Git commit. The earlier Zenodo DOI applies only to the v1.1.0 release."
-title: "Discriminating cellular memory from population selection in bacterial colonization history: computational source"
-version: 1.3.0
-date-released: 2026-11-15
+message: "Cite the DOI for the v1.3.1 archive after Zenodo assigns it, or cite the exact Git commit. The earlier Zenodo DOI applies only to v1.1.0."
+title: "Identifiability limits of cellular memory in bacterial colonization history: computational source"
+version: 1.3.1
+date-released: 2026-11-16
 license: MIT
 repository-code: "https://github.com/squareshorts/colonization-history"
 authors:
