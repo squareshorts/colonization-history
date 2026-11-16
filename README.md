@@ -4,6 +4,12 @@ This repository provides the computational source, processed microscopy observat
 
 Distinct intracellular-state and differential-growth-selection models can produce exactly the same fitted colonization-lag trajectory. Randomized, founder-indexed contact assays and additional carrier-selective measurements can separate restricted alternatives under explicit assumptions. Missing attachment outcomes, especially among sham cells, can severely reduce power and lead to false attribution if calibration assumptions are violated.
 
+## Archived source
+
+Version **v1.3.1** is archived at [Zenodo DOI 10.5281/zenodo.24287020](https://doi.org/10.5281/zenodo.24287020).
+The tagged source revision is [`994fc505dc4e`](https://github.com/squareshorts/colonization-history/tree/v1.3.1).
+The earlier DOI 10.5281/zenodo.23990601 applies to the distinct v1.1.0 release.
+
 ## Current analyses
 
 - [`paper/`](paper/) contains the current numerical source, results and tests. [`paper/FIGURE_AND_RESULT_MAP.md`](paper/FIGURE_AND_RESULT_MAP.md) maps every article figure and main numerical result to its generating program or the traceable archived source.
